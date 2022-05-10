@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+.tt_sm {
+    border-radius: 0.5em;
+    width: 25em;
+    height: 30em;
+    box-shadow: 0.3em 0.3em 0.4em rgba(0, 0, 0, .5);
+    z-index: 1000000;
+    background-color: white;
+    padding: 0.4em;
+    /* font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1, 6em;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: rgb(226, 52, 52);
+    backdrop-filter: blur(2px);
+}
+
+
+/* .tt_sm::before {
+    content: '';
+    position: absolute;
+    top: 0em;
+    left: 0em;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(2px);
+    pointer-events: none;
+    z-index: 1;
+} */
+
+.tt_name_sm {
+    position: relative;
+    float: center;
+    top: 0.4em;
+    font-weight: bold
+}
+
+.xmark_sm {
+    float: right;
+    margin-left: 5px;
+    cursor: pointer;
+    line-height: 0px;
+    width: 2em;
+}
+
+.recipe_img {
+    width: 21em;
+    border-radius: 2em;
+}
+
+.tt_custom_sm {}
+
+.tt_mobile_sm {
+    margin-top: 5px;
+}
+
+.btn_simplemaps {
+    color: black;
+    text-decoration: none;
+    background: #ffffff;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.43;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.btn_simplemaps:hover {
+    text-decoration: underline;
+}

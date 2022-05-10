@@ -3,8 +3,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>hej</h1>
-      <div id="map"></div>
+      <div id="map">
+        <div id="blur"></div>
+      </div>
     </div>
   )
 }
