@@ -3,8 +3,11 @@ function App() {
 
   return (
     <div className="App">
-      <h1>hej</h1>
+      
+
       <div id="map"></div>
+      <header className='header'><h1 className='name'>WORLD WIDE KITCHEN</h1></header>
+      <footer className='footer'></footer>
     </div>
   )
 }
