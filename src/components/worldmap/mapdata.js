@@ -25,17 +25,17 @@ var simplemaps_worldmap_mapdata = {
         //Location defaults
         //------------------------------------------- STYLING OF LOCATION PIN ---------------------------------------------
         location_description: "",
-        location_color: "#c1121f",  // pin color
+        location_color: "#c1121f", // pin color
         location_opacity: 0.8,
         location_hover_opacity: 1,
         location_url: "",
         location_size: 15, // pin size
-        location_type: "circle",  // pin shape
-        location_image_source: "",  
+        location_type: "circle", // pin shape
+        location_image_source: "",
         location_border_color: "#FFFFFF",
         location_border: 1, // pin border
         location_hover_border: 2,
-        all_locations_inactive: "no",
+        all_locations_inactive: "yes",
         all_locations_hidden: "no",
 
     //Label defaults
@@ -650,9 +650,9 @@ var simplemaps_worldmap_mapdata = {
 
         },
         //-----------------------------------------------SWEDEN------------------------------------------------------
-        SE: { 
+        SE: {
             name: "Sweden",
-            description: "<img src=\"https://cdn-rdb.arla.com/Files/arla-se/3776820023/44d39292-0f40-46d6-a91c-0ff5931476e0.jpg?mode=crop&w=1269&h=715&ak=f525e733&hm=e78d4790\" class=\"recipe_img\" /> </br> Ta en kött och en bulle och gröta ihop dem. Sen tar du potatis och mos och blandar det. Lägg allt på en tallrik och ös på med lingon. Gött med köttebullar änna ;)",
+            description: "<img src=\"https://d3aux7tjp119y2.cloudfront.net/images/kottbollar_3351-IBSweb.width-1650.jpg\" class=\"recipe_img\" /> <div class=\"recipe-text\"> <p class=\"intro\">Traditional Swedish meatballs with mashed potatoes and lingonberries – recipe </br> Swedish meatballs are as close to a national dish that we have in Sweden.  Everyone has their own favourite recipe and many celebrity chefs serve  their own versions in their restaurants. Most people will say that their  mum’s recipe is the best of course! Why not impress your friends and cook your own Swedish meatballs with this easy recipe?  <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br>  </br> Method: </br> Fold together bread crumbs, cream, stock and egg and leave to rest for about  5 minutes. Fry the onion in the butter until soft and then mix it with  the breadcrumb-cream. Add salt, pepper and mince and work everything  together, with your hands or fork. Try not to work it too much, as this  will make the meatballs compact. Take a small piece of mince and fry it  to test the flavours. When satisfied with salt and pepper, roll the rest  of the mince to small balls (about one tablespoon mince per ball) Make  sure your hands are wet with water, then the mince won’t stick to your  hands. Fry the meatballs until golden brown and thoroughly cooked, then  put aside. </br> Mix cream and the corn starch and then pour this,  stock and the soy in the pan where you fried the meatballs. Whisk  through the pan and let boil for a couple of minutes. Taste with salt,  pepper and jam for a little bit of sweetness. Put the meatballs back to  the sauce and serve with mashed potatoes and lingonberry jam, maybe some  chopped parsley on top too. </br>  </br> Recipe by Lisa Lemke </div>",
             url: "https://visitsweden.com/what-to-do/food-drink/recipes/traditional-swedish-meatballs-recipe/",
         },
         SZ: {
@@ -956,8 +956,10 @@ var simplemaps_worldmap_mapdata = {
     //-------------------------------------------------------- ADD PIN TO COORDINATES OF CAPITAL -----------------------------------------------------
     locations: {
         "stockholm/sweden": {
-            lat: 59.334591, lng: 18.063240, name: "Stockholm", type: 
-            "circle"
+            lat: 59.334591,
+            lng: 18.063240,
+            name: "Stockholm",
+            type: "circle"
         }
     },
     labels: {},
