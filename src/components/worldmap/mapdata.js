@@ -58,19 +58,7 @@ var simplemaps_worldmap_mapdata = {
   },
  
 
-        //Zoom settings¨
-        // manual_zoom: "yes",
-        // zoom: "yes",
-        // back_image: "no",
-        // initial_back: "no",
-        // initial_zoom: -2000,
-        // initial_zoom_solo: "no",
-        // region_opacity: 1,
-        // region_hover_opacity: 0.6,
-        // zoom_out_incrementally: "yes",
-        // zoom_percentage: 0.99,
-        // zoom_time: 0.5,
-        manual_zoom: "yes",
+    manual_zoom: "yes",
     zoom: "yes",
     back_image: "no",
     initial_back: "no",
