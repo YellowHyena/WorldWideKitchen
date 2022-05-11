@@ -1,4 +1,11 @@
 var simplemaps_worldmap_mapdata = {
+
+
+
+    //State defaults
+
+
+
     main_settings: {
         //General settings
 <<<<<<< HEAD
@@ -18,6 +25,7 @@ var simplemaps_worldmap_mapdata = {
         border_color: "#a4a4a4",
 >>>>>>> 8dc88515d15e7f009a489dfa2917d84b55270da8
         popups: "on_click",
+<<<<<<< HEAD
     
 
         //State defaults
@@ -28,6 +36,28 @@ var simplemaps_worldmap_mapdata = {
         border_size: 1,
         all_states_inactive: "no",
         all_states_zoomable: "no",
+||||||| 8dc8851
+
+        //State defaults
+        state_description: "State description",
+        state_color: "#222830", //"#88A4BC" 
+        state_hover_color: "#e23434",
+        state_url: "",
+        border_size: 1,
+        all_states_inactive: "no",
+        all_states_zoomable: "no",
+=======
+      
+    // För att ta bort ("Coming Soon...") använd (description:"") inuti lands koden.
+    state_description: "Coming Soon...",
+    state_color: "#88A4BC",
+    state_hover_color: "#3B729F",
+    state_url: "", // #2 View Website som togs bort...
+    border_size: 1.5,
+    all_states_inactive: "no",
+    all_states_zoomable: "no",
+ 
+>>>>>>> 0f078341d315f194772c183bb1fdfb72513d7632
 
         //Location defaults
         //------------------------------------------- STYLING OF LOCATION PIN ---------------------------------------------
@@ -45,13 +75,43 @@ var simplemaps_worldmap_mapdata = {
         all_locations_inactive: "no",
         all_locations_hidden: "no",
 
-        //Label defaults
-        label_color: "#d5ddec",
-        label_hover_color: "#d5ddec",
-        label_size: 22,
-        label_font: "Arial",
-        hide_labels: "no",
+    //Label defaults
+    label_color: "#d5ddec",
+    label_hover_color: "#d5ddec",
+    label_size: 22,
+    label_font: "Arial",
+    hide_labels: "no",
 
+
+    //Zoom settings¨
+    manual_zoom: "yes",
+    zoom: "yes",
+    back_image: "no",
+    initial_back: "no",
+    initial_zoom: -1,
+    initial_zoom_solo: "no",
+    region_opacity: 1,
+    region_hover_opacity: 0.6,
+    zoom_out_incrementally: "yes",
+    zoom_percentage: 0.99,
+    zoom_time: 0.5,
+
+ 
+
+    //Advanced settings
+    div: "map",
+    auto_load: "yes",
+    url_new_tab: "yes",
+    images_directory: "default",
+    fade_time: 0.1,
+    link_text: "View Website",
+    state_image_url: "",
+    state_image_position: "",
+    location_image_url: "",
+  },
+ 
+
+<<<<<<< HEAD
         //Zoom settings¨
         manual_zoom: "yes",
         zoom: "yes",
@@ -64,6 +124,21 @@ var simplemaps_worldmap_mapdata = {
         zoom_out_incrementally: "yes",
         zoom_percentage: 0.99,
         zoom_time: 0.5,
+||||||| 8dc8851
+        //Zoom settings¨
+        manual_zoom: "yes",
+        zoom: "yes",
+        back_image: "no",
+        initial_back: "no",
+        initial_zoom: -1,
+        initial_zoom_solo: "no",
+        region_opacity: 1,
+        region_hover_opacity: 0.6,
+        zoom_out_incrementally: "yes",
+        zoom_percentage: 0.99,
+        zoom_time: 0.5,
+=======
+>>>>>>> 0f078341d315f194772c183bb1fdfb72513d7632
 
         //Popup settings
         popup_color: "white",
@@ -74,17 +149,7 @@ var simplemaps_worldmap_mapdata = {
         popup_nocss: "yes",
         popup_centered: "yes",
 
-        //Advanced settings
-        div: "map",
-        auto_load: "yes",
-        url_new_tab: "yes",
-        images_directory: "default",
-        fade_time: 0.1,
-        link_text: "View Website",
-        state_image_url: "",
-        state_image_position: "",
-        location_image_url: ""
-    },
+  
     state_specific: {
         AF: {
             name: "Afghanistan",
