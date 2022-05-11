@@ -18,17 +18,18 @@ var simplemaps_worldmap_mapdata = {
         all_states_zoomable: "no",
 
         //Location defaults
-        location_description: "Location description",
-        location_color: "#FF0067",
+        //------------------------------------------- STYLING OF LOCATION PIN ---------------------------------------------
+        location_description: "",
+        location_color: "#c1121f",  // pin color
         location_opacity: 0.8,
         location_hover_opacity: 1,
         location_url: "",
-        location_size: 25,
-        location_type: "square",
-        location_image_source: "frog.png",
+        location_size: 15, // pin size
+        location_type: "circle",  // pin shape
+        location_image_source: "",  
         location_border_color: "#FFFFFF",
-        location_border: 2,
-        location_hover_border: 2.5,
+        location_border: 1, // pin border
+        location_hover_border: 2,
         all_locations_inactive: "no",
         all_locations_hidden: "no",
 
@@ -628,9 +629,10 @@ var simplemaps_worldmap_mapdata = {
             name: "Slovenia",
             description: " "
         },
-        SE: {
+        //-----------------------------------------------SWEDEN------------------------------------------------------
+        SE: { 
             name: "Sweden",
-            description: " hej hej"
+            description: "",
         },
         SZ: {
             name: "Swaziland",
@@ -929,7 +931,13 @@ var simplemaps_worldmap_mapdata = {
             description: " "
         }
     },
-    locations: {},
+    //-------------------------------------------------------- ADD PIN TO COORDINATES OF CAPITAL -----------------------------------------------------
+    locations: {
+        "stockholm/sweden": {
+            lat: 59.334591, lng: 18.063240, name: "Stockholm", type: 
+            "circle"
+        }
+    },
     labels: {},
     legend: {
         entries: []
