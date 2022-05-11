@@ -114,3 +114,97 @@
 
   right: 16px; /* EM?! */
 }
+
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+.tt_sm {
+    border-radius: 0.5em;
+    width: 25em;
+    height: 30em;
+    box-shadow: 0.3em 0.3em 0.4em rgba(0, 0, 0, .5);
+    z-index: 10;
+    background-color: #ffffff;
+    padding: 0.4em;
+    /* font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1, 6em;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #e23434;
+    box-shadow: rgba(0, 0, 0, 0.4) 0em 0em 0em 100vw;
+}
+
+
+/* #blur {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(1.4px);
+    background-color: #00000058;
+    pointer-events: none;
+} */
+
+.tt_name_sm {
+    position: relative;
+    width: 30em;
+    margin-left: -15em;
+    left: 50%;
+    top: 0.4em;
+    font-weight: bold;
+    padding-bottom: 2em;
+}
+
+.xmark_sm {
+    position: absolute;
+    right: .2em;
+    top: .2em;
+    margin-left: 5px;
+    cursor: pointer;
+    line-height: 0px;
+    width: 2em;
+}
+
+.recipe_img {
+    width: 21em;
+    border-radius: 2em;
+    margin-bottom: 1em;
+}
+
+.tt_custom_sm {}
+
+.tt_mobile_sm {
+    margin-top: 5px;
+}
+
+.btn_simplemaps {
+    color: rgb(226, 52, 52);
+    text-decoration: none;
+    background: #ffffff;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.43;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.btn_simplemaps:hover {
+    text-decoration: underline;
+}
