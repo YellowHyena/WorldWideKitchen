@@ -2,17 +2,17 @@ var simplemaps_worldmap_mapdata = {
     main_settings: {
         //General settings
         width: "responsive", //'700' or 'responsive'
-        background_color: "#222830", //"#FFFFFF"
+        background_color: "#FFFFFF", //"#FFFFFF"
         background_transparent: "no",
-        border_color: "#e8e6e3",
+        border_color: "#a4a4a4",
         popups: "on_click",
 
         //State defaults
         state_description: "State description",
         state_color: "#222830", //"#88A4BC" 
-        state_hover_color: "#3B729F",
+        state_hover_color: "#e23434",
         state_url: "",
-        border_size: 1.5,
+        border_size: 1,
         all_states_inactive: "no",
         all_states_zoomable: "no",
 
@@ -630,7 +630,7 @@ var simplemaps_worldmap_mapdata = {
         },
         SE: {
             name: "Sweden",
-            description: "<img src=\"https://cdn-rdb.arla.com/Files/arla-se/3776820023/44d39292-0f40-46d6-a91c-0ff5931476e0.jpg?mode=crop&w=1269&h=715&ak=f525e733&hm=e78d4790\" class=\"recipe_img\" /> </br> gött med köttebullar änna",
+            description: "<img src=\"https://cdn-rdb.arla.com/Files/arla-se/3776820023/44d39292-0f40-46d6-a91c-0ff5931476e0.jpg?mode=crop&w=1269&h=715&ak=f525e733&hm=e78d4790\" class=\"recipe_img\" /> </br> Ta en kött och en bulle och gröta ihop dem. Sen tar du potatis och mos och blandar det. Lägg allt på en tallrik och ös på med lingon. Gött med köttebullar änna ;)",
             url: "https://visitsweden.com/what-to-do/food-drink/recipes/traditional-swedish-meatballs-recipe/",
         },
         SZ: {

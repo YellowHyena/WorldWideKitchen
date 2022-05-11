@@ -3,9 +3,9 @@ function App() {
 
   return (
     <div className="App">
-      <div id="map">
-        <div id="blur"></div>
-      </div>
+
+      <div id="blur"></div>
+      <div id="map"></div>
     </div>
   )
 }
