@@ -6,16 +6,42 @@
     box-shadow: 0.3em 0.3em 0.4em rgba(0, 0, 0, .5);
     z-index: 10;
     background-color: #ffffff;
-    padding: 0.4em;
     /* font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif; */
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
     font-weight: 700;
     line-height: 1, 6em;
     letter-spacing: 0.02em;
-    text-align: center;
     color: #e23434;
     box-shadow: rgba(0, 0, 0, 0.4) 0em 0em 0em 100vw;
+    overflow: hidden;
+}
+
+.recipe-text::-webkit-scrollbar {
+    width: 17px;
+}
+
+.recipe-text::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background: #d1a8a8;
+    outline: 2px solid #000000;
+}
+
+.recipe-text::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 1em;
+}
+
+.recipe-text {
+    padding: 0 1em;
+    position: relative;
+    height: 12em;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.intro {
+    text-align: center;
 }
 
 
@@ -30,13 +56,17 @@
 } */
 
 .tt_name_sm {
-    position: relative;
-    width: 30em;
-    margin-left: -15em;
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    width: 20em;
+    margin-left: -10em;
     left: 50%;
-    top: 0.4em;
+    top: 0em;
     font-weight: bold;
-    padding-bottom: 2em;
+    padding: 0.3em 0;
+    filter: drop-shadow(0em 0em 0.1em #ffffff);
+    backdrop-filter: blur(3em);
 }
 
 .xmark_sm {
@@ -50,12 +80,20 @@
 }
 
 .recipe_img {
-    width: 21em;
-    border-radius: 2em;
+    position: relative;
+    top: 0em;
+    width: 20em;
+    margin-left: -10em;
+    left: 50%;
+    padding: 0;
+    border-radius: 0 0 2em 2em;
     margin-bottom: 1em;
 }
 
-.tt_custom_sm {}
+.tt_custom_sm {
+    margin: 0;
+    padding: 0;
+}
 
 .tt_mobile_sm {
     margin-top: 5px;
