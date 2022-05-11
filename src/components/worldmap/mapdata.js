@@ -5,7 +5,7 @@ var simplemaps_worldmap_mapdata = {
     main_settings: {
         //General settings
 
-        width: "1810", //'700' or 'responsive '
+        width: "responsive", //'700' or 'responsive '
         background_color: "#FFFFFF", //"#FFFFFF"
         background_transparent: "no",
         border_color: "#a4a4a4",
@@ -76,7 +76,7 @@ var simplemaps_worldmap_mapdata = {
         popup_shadow: 1,
         popup_corners: 5,
         popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
-        popup_nocss: "yes",
+        popup_nocss: 'yes',
         popup_centered: "yes",
 
   
