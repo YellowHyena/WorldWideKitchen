@@ -1,4 +1,5 @@
 import './App.css'
+import logo from './components/assets/logo.svg'
 function App() {
 
   return (
@@ -6,7 +7,7 @@ function App() {
       
 
       <div id="map"></div>
-      <header className='header'><h1 className='name'>WORLD WIDE KITCHEN</h1></header>
+      <header className='header'><img src={logo} className="logo"></img><h1 className='name'>WORLD WIDE KITCHEN</h1></header>
       <footer className='footer'></footer>
     </div>
   )
