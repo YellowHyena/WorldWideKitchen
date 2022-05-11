@@ -1,53 +1,17 @@
 var simplemaps_worldmap_mapdata = {
 
 
-
     //State defaults
-
-
-
     main_settings: {
         //General settings
-<<<<<<< HEAD
-        width: "1810", //'700' or 'responsive'
-        background_color: "#FFFFFF",
-        background_transparent: "yes",
-        border_color: "#ffffff",
-||||||| 732ea95
-        width: "responsive", //'700' or 'responsive'
-        background_color: "#FFFFFF",
-        background_transparent: "yes",
-        border_color: "#ffffff",
-=======
-        width: "responsive", //'700' or 'responsive'
+
+        width: "1810", //'700' or 'responsive '
         background_color: "#FFFFFF", //"#FFFFFF"
         background_transparent: "no",
         border_color: "#a4a4a4",
->>>>>>> 8dc88515d15e7f009a489dfa2917d84b55270da8
         popups: "on_click",
-<<<<<<< HEAD
-    
 
-        //State defaults
-        state_description: "State description",
-        state_color: "#222830", //"#88A4BC" 
-        state_hover_color: "#e23434",
-        state_url: "",
-        border_size: 1,
-        all_states_inactive: "no",
-        all_states_zoomable: "no",
-||||||| 8dc8851
-
-        //State defaults
-        state_description: "State description",
-        state_color: "#222830", //"#88A4BC" 
-        state_hover_color: "#e23434",
-        state_url: "",
-        border_size: 1,
-        all_states_inactive: "no",
-        all_states_zoomable: "no",
-=======
-      
+        //State defaults  
     // För att ta bort ("Coming Soon...") använd (description:"") inuti lands koden.
     state_description: "Coming Soon...",
     state_color: "#88A4BC",
@@ -57,7 +21,6 @@ var simplemaps_worldmap_mapdata = {
     all_states_inactive: "no",
     all_states_zoomable: "no",
  
->>>>>>> 0f078341d315f194772c183bb1fdfb72513d7632
 
         //Location defaults
         //------------------------------------------- STYLING OF LOCATION PIN ---------------------------------------------
@@ -82,22 +45,6 @@ var simplemaps_worldmap_mapdata = {
     label_font: "Arial",
     hide_labels: "no",
 
-
-    //Zoom settings¨
-    manual_zoom: "yes",
-    zoom: "yes",
-    back_image: "no",
-    initial_back: "no",
-    initial_zoom: -1,
-    initial_zoom_solo: "no",
-    region_opacity: 1,
-    region_hover_opacity: 0.6,
-    zoom_out_incrementally: "yes",
-    zoom_percentage: 0.99,
-    zoom_time: 0.5,
-
- 
-
     //Advanced settings
     div: "map",
     auto_load: "yes",
@@ -111,34 +58,29 @@ var simplemaps_worldmap_mapdata = {
   },
  
 
-<<<<<<< HEAD
         //Zoom settings¨
+        // manual_zoom: "yes",
+        // zoom: "yes",
+        // back_image: "no",
+        // initial_back: "no",
+        // initial_zoom: -2000,
+        // initial_zoom_solo: "no",
+        // region_opacity: 1,
+        // region_hover_opacity: 0.6,
+        // zoom_out_incrementally: "yes",
+        // zoom_percentage: 0.99,
+        // zoom_time: 0.5,
         manual_zoom: "yes",
-        zoom: "yes",
-        back_image: "no",
-        initial_back: "no",
-        initial_zoom: -2000,
-        initial_zoom_solo: "no",
-        region_opacity: 1,
-        region_hover_opacity: 0.6,
-        zoom_out_incrementally: "yes",
-        zoom_percentage: 0.99,
-        zoom_time: 0.5,
-||||||| 8dc8851
-        //Zoom settings¨
-        manual_zoom: "yes",
-        zoom: "yes",
-        back_image: "no",
-        initial_back: "no",
-        initial_zoom: -1,
-        initial_zoom_solo: "no",
-        region_opacity: 1,
-        region_hover_opacity: 0.6,
-        zoom_out_incrementally: "yes",
-        zoom_percentage: 0.99,
-        zoom_time: 0.5,
-=======
->>>>>>> 0f078341d315f194772c183bb1fdfb72513d7632
+    zoom: "yes",
+    back_image: "no",
+    initial_back: "no",
+    initial_zoom: -1,
+    initial_zoom_solo: "no",
+    region_opacity: 1,
+    region_hover_opacity: 0.6,
+    zoom_out_incrementally: "yes",
+    zoom_percentage: 0.99,
+    zoom_time: 0.5,
 
         //Popup settings
         popup_color: "white",
