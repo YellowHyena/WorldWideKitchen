@@ -1,120 +1,123 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
-.header{
+.header {
     position: absolute;
-        left: 0px;
-        top: 0px;
-        width: 100%;
-        height: 10em;
-        margin-bottom: 10em;
-        background: #FFFFFF;
-        padding: 0;
-
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 10em;
+    margin-bottom: 10em;
+    background: #FFFFFF;
+    padding: 0;
 }
-.name{
+
+.name {
     position: relative;
-
-        width: 20em;
-        margin-left: -5em;
-        left: 50%;
-        padding: 0;
-        margin-top: 1em;
-    
-        font-family: 'Quicksand', sans-serif;
-        font-size: 3em;
-        color: #C1121F;
+    width: 20em;
+    margin-left: -5em;
+    left: 50%;
+    padding: 0;
+    margin-top: 1em;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3em;
+    color: #C1121F;
 }
-#map{
+
+#map {
     margin-top: 10em;
     padding: 0;
 }
-.logo{
+
+.logo {
     position: absolute;
-        width: 156px;
-        height: 196px;
-        margin-left: 3em;
+    width: 156px;
+    height: 196px;
+    margin-left: 3em;
 }
 
+
 /* FOOTER */
+
 .footer-content {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  padding: 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
 }
 
 .footer ul {
-  padding: 0;
-  list-style: none;
-  text-align: center;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 }
 
 .footer ul li button {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #c1121f;
-  border: none;
-  background-color: transparent;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #c1121f;
+    border: none;
+    background-color: transparent;
 }
 
 .footer ul li {
-  display: inline-block;
-  padding: 0 2em;
+    display: inline-block;
+    padding: 0 2em;
 }
 
 .footer ul li button:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
 .simplemaps {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2em;
-  font-weight: bold;
-  color: #c1121f;
-  border: none;
-  background-color: transparent;
-  text-decoration: none;
-  display: inline-block;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #c1121f;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .simplemaps:hover {
-  transform: scale(1.1);
-  cursor: pointer;
+    transform: scale(1.1);
+    cursor: pointer;
 }
 
-/* HELP POPUP */
-.helppopup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.2);
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  backdrop-filter: blur(2px);
+/* HELP POPUP */
+
+.helppopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
 }
 
 .helppopup-inner {
-  position: relative;
-  padding: 32px; /* EM?! */
-  width: 100%;
-  max-width: 640px; /* EM?! */
-  background-color: white;
+    position: relative;
+    padding: 32px;
+    /* EM?! */
+    width: 100%;
+    max-width: 640px;
+    /* EM?! */
+    background-color: white;
 }
 
 .helppopup-inner .close-btn {
-  position: absolute;
-  top: 16px; /* EM?! */
-
-  right: 16px; /* EM?! */
+    position: absolute;
+    top: 16px;
+    /* EM?! */
+    right: 16px;
+    /* EM?! */
 }
-
-
-
 
 .tt_sm {
     border-radius: 0.5em;
@@ -152,7 +155,8 @@
 .recipe-text {
     padding: 0 1em;
     position: relative;
-    height: 12em;
+    top: 3em;
+    height: 25em;
     overflow-y: scroll;
     text-align: left;
 }
@@ -160,17 +164,6 @@
 .intro {
     text-align: center;
 }
-
-
-/* #blur {
-    position: absolute;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    backdrop-filter: blur(1.4px);
-    background-color: #00000058;
-    pointer-events: none;
-} */
 
 .tt_name_sm {
     text-align: center;
@@ -203,7 +196,7 @@
     margin-left: -10em;
     left: 50%;
     padding: 0;
-    border-radius: 0 0 2em 2em;
+    border-radius: 2em;
     margin-bottom: 1em;
 }
 
@@ -217,12 +210,13 @@
 }
 
 .btn_simplemaps {
+    position: relative;
     color: rgb(226, 52, 52);
     text-decoration: none;
     background: #ffffff;
     display: inline-block;
     padding: 5px 5px;
-    margin: 0;
+    margin: 3em 0;
     width: 100%;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

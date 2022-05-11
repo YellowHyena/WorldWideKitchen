@@ -12,15 +12,15 @@ var simplemaps_worldmap_mapdata = {
         popups: "on_click",
 
         //State defaults  
-    // För att ta bort ("Coming Soon...") använd (description:"") inuti lands koden.
-    state_description: "Coming Soon...",
-    state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
-    state_url: "", // #2 View Website som togs bort...
-    border_size: 1.5,
-    all_states_inactive: "no",
-    all_states_zoomable: "no",
- 
+        // För att ta bort ("Coming Soon...") använd (description:"") inuti lands koden.
+        state_description: "Coming Soon...",
+        state_color: "#000000",
+        state_hover_color: "#C1121F",
+        state_url: "", // #2 View Website som togs bort...
+        border_size: 1,
+        all_states_inactive: "no",
+        all_states_zoomable: "no",
+
 
         //Location defaults
         //------------------------------------------- STYLING OF LOCATION PIN ---------------------------------------------
@@ -38,37 +38,37 @@ var simplemaps_worldmap_mapdata = {
         all_locations_inactive: "yes",
         all_locations_hidden: "no",
 
-    //Label defaults
-    label_color: "#d5ddec",
-    label_hover_color: "#d5ddec",
-    label_size: 22,
-    label_font: "Arial",
-    hide_labels: "no",
+        //Label defaults
+        label_color: "#d5ddec",
+        label_hover_color: "#d5ddec",
+        label_size: 22,
+        label_font: "Arial",
+        hide_labels: "no",
 
-    //Advanced settings
-    div: "map",
-    auto_load: "yes",
-    url_new_tab: "yes",
-    images_directory: "default",
-    fade_time: 0.1,
-    link_text: "View Website",
-    state_image_url: "",
-    state_image_position: "",
-    location_image_url: "",
-  },
- 
+        //Advanced settings
+        div: "map",
+        auto_load: "yes",
+        url_new_tab: "yes",
+        images_directory: "default",
+        fade_time: 0.1,
+        link_text: "View Website",
+        state_image_url: "",
+        state_image_position: "",
+        location_image_url: "",
 
-    manual_zoom: "yes",
-    zoom: "yes",
-    back_image: "no",
-    initial_back: "no",
-    initial_zoom: -1,
-    initial_zoom_solo: "no",
-    region_opacity: 1,
-    region_hover_opacity: 0.6,
-    zoom_out_incrementally: "yes",
-    zoom_percentage: 0.99,
-    zoom_time: 0.5,
+
+
+        manual_zoom: "yes",
+        zoom: "yes",
+        back_image: "no",
+        initial_back: "no",
+        initial_zoom: -1,
+        initial_zoom_solo: "no",
+        region_opacity: 1,
+        region_hover_opacity: 0.6,
+        zoom_out_incrementally: "yes",
+        zoom_percentage: 0.99,
+        zoom_time: 0.5,
 
         //Popup settings
         popup_color: "white",
@@ -76,10 +76,11 @@ var simplemaps_worldmap_mapdata = {
         popup_shadow: 1,
         popup_corners: 5,
         popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
-        popup_nocss: 'yes',
+        popup_nocss: "yes",
         popup_centered: "yes",
+    },
 
-  
+
     state_specific: {
         AF: {
             name: "Afghanistan",
@@ -640,7 +641,7 @@ var simplemaps_worldmap_mapdata = {
         //-----------------------------------------------SWEDEN------------------------------------------------------
         SE: {
             name: "Sweden",
-            description: "<img src=\"https://d3aux7tjp119y2.cloudfront.net/images/kottbollar_3351-IBSweb.width-1650.jpg\" class=\"recipe_img\" /> <div class=\"recipe-text\"> <p class=\"intro\">Traditional Swedish meatballs with mashed potatoes and lingonberries – recipe </br> Swedish meatballs are as close to a national dish that we have in Sweden.  Everyone has their own favourite recipe and many celebrity chefs serve  their own versions in their restaurants. Most people will say that their  mum’s recipe is the best of course! Why not impress your friends and cook your own Swedish meatballs with this easy recipe?  <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br>  </br> Method: </br> Fold together bread crumbs, cream, stock and egg and leave to rest for about  5 minutes. Fry the onion in the butter until soft and then mix it with  the breadcrumb-cream. Add salt, pepper and mince and work everything  together, with your hands or fork. Try not to work it too much, as this  will make the meatballs compact. Take a small piece of mince and fry it  to test the flavours. When satisfied with salt and pepper, roll the rest  of the mince to small balls (about one tablespoon mince per ball) Make  sure your hands are wet with water, then the mince won’t stick to your  hands. Fry the meatballs until golden brown and thoroughly cooked, then  put aside. </br> Mix cream and the corn starch and then pour this,  stock and the soy in the pan where you fried the meatballs. Whisk  through the pan and let boil for a couple of minutes. Taste with salt,  pepper and jam for a little bit of sweetness. Put the meatballs back to  the sauce and serve with mashed potatoes and lingonberry jam, maybe some  chopped parsley on top too. </br>  </br> Recipe by Lisa Lemke </div>",
+            description: " <div class=\"recipe-text\"> <img src=\"https://d3aux7tjp119y2.cloudfront.net/images/kottbollar_3351-IBSweb.width-1650.jpg\" class=\"recipe_img\" /> <p class=\"intro\">Traditional Swedish meatballs with mashed potatoes and lingonberries – recipe </br> Swedish meatballs are as close to a national dish that we have in Sweden. Everyone has their own favourite recipe and many celebrity chefs serve their own versions in their restaurants. Most people will say that their mum’s recipe is the best of course! Why not impress your friends and cook your own Swedish meatballs with this easy recipe?  <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br> Fold together bread crumbs, cream, stock and egg and leave to rest for about 5 minutes. Fry the onion in the butter until soft and then mix it with  the breadcrumb-cream. Add salt, pepper and mince and work everything together, with your hands or fork. Try not to work it too much, as this will make the meatballs compact. Take a small piece of mince and fry it  to test the flavours. When satisfied with salt and pepper, roll the rest  of the mince to small balls (about one tablespoon mince per ball) Make sure your hands are wet with water, then the mince won’t stick to your hands. Fry the meatballs until golden brown and thoroughly cooked, then  put aside. </br> Mix cream and the corn starch and then pour this, stock and the soy in the pan where you fried the meatballs. Whisk through the pan and let boil for a couple of minutes. Taste with salt, pepper and jam for a little bit of sweetness. Put the meatballs back to the sauce and serve with mashed potatoes and lingonberry jam, maybe some chopped parsley on top too. </br>  </br> Recipe by Lisa Lemke </div>",
             url: "https://visitsweden.com/what-to-do/food-drink/recipes/traditional-swedish-meatballs-recipe/",
         },
         SZ: {
