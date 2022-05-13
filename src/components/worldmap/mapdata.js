@@ -36,7 +36,7 @@ var simplemaps_worldmap_mapdata = {
         location_border: 1, // pin border
         location_hover_border: 2,
         all_locations_inactive: "yes",
-        all_locations_hidden: "no",
+        all_locations_hidden: "yes", // change to "no" to show red pin
 
         //Label defaults
         label_color: "#d5ddec",
@@ -164,6 +164,9 @@ var simplemaps_worldmap_mapdata = {
         },
         BR: {
             name: "Brazil",
+             description: " <div class=\"recipe-text\"> <img src=\".......\" class=\"recipe_img\" /> <p class=\"intro\">TITLE....... </br>INTRO....... <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br>........ </br>  </br> Recipe by ....... </div>",
+            url: ".......",
+            color: "#8E4849"
 
         },
         BN: {
@@ -348,6 +351,9 @@ var simplemaps_worldmap_mapdata = {
         },
         IN: {
             name: "India",
+            description: " <div class=\"recipe-text\"> <img src=\".......\" class=\"recipe_img\" /> <p class=\"intro\">TITLE....... </br>INTRO....... <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br>........ </br>  </br> Recipe by ....... </div>",
+            url: ".......",
+            color: "#8E4849"
 
         },
         IE: {
@@ -372,6 +378,9 @@ var simplemaps_worldmap_mapdata = {
         },
         IT: {
             name: "Italy",
+             description: " <div class=\"recipe-text\"> <img src=\"https://www.tasteatlas.com/images/recipes/05183524d4204a3f8b92f1c1d9392da2.jpg?mw=910\" class=\"recipe_img\" /> <p class=\"intro\"> RAGÙ ALLA BOLOGNESE </br></br> What is to the rest of the world known as spaghetti Bolognese, practically doesn't exist in Italy, let alone in Bologna. This dish has been traced as far back as the 17th century, and for the locals, the ragù is a very serious matter. According to the Italian Academy of Cuisine, this is the most typical and classic-tasting rendition of Bologna's famed meat sauce and is currently the official version. Traditionally, ragù alla Bolognese is served with tagliatelle. <p></br> Recipe: </br> Servings 4 Cooking time 3 1⁄2 hours </br>Ingredients: </br>3 tbsp olive oil or 50g butter </br>300g coarsely ground beef – preferably skirt steak, chuck or flank </br>150g pancetta (unsmoked) </br>50g yellow carrot </br>50g celery rib </br>50g onion </br>300g tomato passata or peeled tomatoes </br>1.2 L beef or poultry stock, as needed </br>240 ml whole milk </br>120 ml red wine </br>salt and pepper, to taste </br>120 ml whipping cream (optional) </br>360g tagliatelle, fresh or dried </br>Method: </br>1.Finely dice the yellow carrot, the rib of celery, and the onion, then finely chop. </br>2.Finely dice the pancetta then finely chop it until it turns into a paste.</br>3.Add the pancetta to a 20 cm terracotta dish or a thick aluminum pan, and sauté until rendered. </br>4.Add the butter or olive oil to the pancetta, then add the root vegetables. Sweat the vegetables for about 10-15 minutes until softened. </br>5.Add the coarsely ground beef and stir-fry until browned and roasted, and there is no liquid left in the dish/pan. Pour in the wine and stir. </br>6.Once the alcohol has evaporated, pour in the passata or peeled tomatoes and stir to incorporate. </br>7.Simmer for 2 hours, covered, adding stock if the ragù gets dry, and stirring occasionally. </br>8.After 2 hours have passed, pour in the milk to balance out the acidity of the tomatoes, and stir and cook some more. Season with salt and pepper to taste. </br>9.If using dried tagliatelle, pour in the whipping cream, stir, and cook just until heated through (optional). </br>10.To cook the pasta, fill a large pot with water (1 L per 100g of pasta), then bring to a boil and season generously with salt. </br>11.Drop the tagliatelle into the water and cook as instructed on the packaging or until al dente. </br>12.Drain, transfer into a large bowl, then add the ragù and mix well. </br>13.Divide between warmed plates, taking care there are equal amounts of pasta and ragù on each plate, then serve. </br>  </br> Recipe by TasteAtlas </div>",
+            url: "https://www.tasteatlas.com/bolognese/recipe/",
+            color: "#8E4849"
 
         },
         JM: {
@@ -612,6 +621,9 @@ var simplemaps_worldmap_mapdata = {
         },
         SN: {
             name: "Senegal",
+            description: " <div class=\"recipe-text\"> <img src=\".......\" class=\"recipe_img\" /> <p class=\"intro\">TITLE....... </br>INTRO....... <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br>........ </br>  </br> Recipe by ....... </div>",
+            url: ".......",
+            color: "#8E4849"
 
         },
         SL: {
@@ -641,8 +653,9 @@ var simplemaps_worldmap_mapdata = {
         //-----------------------------------------------SWEDEN------------------------------------------------------
         SE: {
             name: "Sweden",
-            description: " <div class=\"recipe-text\"> <img src=\"https://d3aux7tjp119y2.cloudfront.net/images/kottbollar_3351-IBSweb.width-1650.jpg\" class=\"recipe_img\" /> <p class=\"intro\">Traditional Swedish meatballs with mashed potatoes and lingonberries – recipe </br> Swedish meatballs are as close to a national dish that we have in Sweden. Everyone has their own favourite recipe and many celebrity chefs serve their own versions in their restaurants. Most people will say that their mum’s recipe is the best of course! Why not impress your friends and cook your own Swedish meatballs with this easy recipe?  <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br> Fold together bread crumbs, cream, stock and egg and leave to rest for about 5 minutes. Fry the onion in the butter until soft and then mix it with  the breadcrumb-cream. Add salt, pepper and mince and work everything together, with your hands or fork. Try not to work it too much, as this will make the meatballs compact. Take a small piece of mince and fry it  to test the flavours. When satisfied with salt and pepper, roll the rest  of the mince to small balls (about one tablespoon mince per ball) Make sure your hands are wet with water, then the mince won’t stick to your hands. Fry the meatballs until golden brown and thoroughly cooked, then  put aside. </br> Mix cream and the corn starch and then pour this, stock and the soy in the pan where you fried the meatballs. Whisk through the pan and let boil for a couple of minutes. Taste with salt, pepper and jam for a little bit of sweetness. Put the meatballs back to the sauce and serve with mashed potatoes and lingonberry jam, maybe some chopped parsley on top too. </br>  </br> Recipe by Lisa Lemke </div>",
+            description: " <div class=\"recipe-text\"> <img src=\"https://d3aux7tjp119y2.cloudfront.net/images/kottbollar_3351-IBSweb.width-1650.jpg\" class=\"recipe_img\" /> <p class=\"intro\">Traditional Swedish meatballs with mashed potatoes and lingonberries </br></br> Swedish meatballs are as close to a national dish that we have in Sweden. Everyone has their own favourite recipe and many celebrity chefs serve their own versions in their restaurants. Most people will say that their mum’s recipe is the best of course! Why not impress your friends and cook your own Swedish meatballs with this easy recipe?  <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br> Fold together bread crumbs, cream, stock and egg and leave to rest for about 5 minutes. Fry the onion in the butter until soft and then mix it with  the breadcrumb-cream. Add salt, pepper and mince and work everything together, with your hands or fork. Try not to work it too much, as this will make the meatballs compact. Take a small piece of mince and fry it  to test the flavours. When satisfied with salt and pepper, roll the rest  of the mince to small balls (about one tablespoon mince per ball) Make sure your hands are wet with water, then the mince won’t stick to your hands. Fry the meatballs until golden brown and thoroughly cooked, then  put aside. </br> Mix cream and the corn starch and then pour this, stock and the soy in the pan where you fried the meatballs. Whisk through the pan and let boil for a couple of minutes. Taste with salt, pepper and jam for a little bit of sweetness. Put the meatballs back to the sauce and serve with mashed potatoes and lingonberry jam, maybe some chopped parsley on top too. </br>  </br> Recipe by Lisa Lemke </div>",
             url: "https://visitsweden.com/what-to-do/food-drink/recipes/traditional-swedish-meatballs-recipe/",
+            color: "#8E4849"
         },
         SZ: {
             name: "Swaziland",
@@ -662,6 +675,9 @@ var simplemaps_worldmap_mapdata = {
         },
         TH: {
             name: "Thailand",
+            description: " <div class=\"recipe-text\"> <img src=\".......\" class=\"recipe_img\" /> <p class=\"intro\">TITLE....... </br>INTRO....... <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br>........ </br>  </br> Recipe by ....... </div>",
+            url: ".......",
+            color: "#8E4849"
 
         },
         TJ: {
@@ -706,6 +722,9 @@ var simplemaps_worldmap_mapdata = {
         },
         US: {
             name: "United States",
+            description: " <div class=\"recipe-text\"> <img src=\".......\" class=\"recipe_img\" /> <p class=\"intro\">TITLE....... </br>INTRO....... <p></br> Recipe: </br> 4 portions </br>Ingredients: </br>2 tbs of breadcrumbs </br> 50 ml single cream </br>1 egg </br> 1 tbs concentrated stock from beef, calf or chicken </br> 0.5 finely chopped yellow onion </br> 25 g butter </br> 500 g ground mince (half pork and beef) </br> 1 tsp freshly ground black pepper </br> about 1.5 tsp of salt </br> Butter to fry in </br> Sauce: </br> 2.5 dl double cream </br> 1,5 tsp dark soy </br> 2.5 dl beef stock (not concentrated) </br> 25 g butter </br> 1 tbs corn starch (or something similar) to thicken the sauce with </br> salt and pepper </br> 2 tbs jam from lingonberries or cherries </br> To serve: </br> mashed potatoes </br> lingonberry jam </br> chopped parsley </br> </br> Method: </br>........ </br>  </br> Recipe by ....... </div>",
+            url: ".......",
+            color: "#8E4849"
 
         },
         UZ: {
