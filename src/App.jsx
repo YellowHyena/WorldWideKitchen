@@ -3,6 +3,10 @@ import "./App.css";
 import NavBarFooter from "./components/NavBarFooter";
 import HelpPopup from "./components/HelpPopup";
 import { useState } from "react";
+import "./components/style/footer.css"
+import "./components/style/header.css"
+import "./components/style/popup.css"
+import "./components/style/recipeCard.css"
 
 function App() {
   const [helpButtonPopup, setHelpButtonPopup] = useState(false);

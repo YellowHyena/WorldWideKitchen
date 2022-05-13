@@ -1,0 +1,120 @@
+.tt_sm {
+    border-radius: 0.5em;
+    width: 25em;
+    height: 30em;
+    box-shadow: 0.3em 0.3em 0.4em rgba(0, 0, 0, .5);
+    z-index: 10;
+    background-color: #ffffff;
+    /* font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif; */
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1, 6em;
+    letter-spacing: 0.02em;
+    color: #e23434;
+    box-shadow: rgba(0, 0, 0, 0.4) 0em 0em 0em 100vw;
+    overflow: hidden;
+}
+
+.recipe-text::-webkit-scrollbar {
+    width: 17px;
+}
+
+.recipe-text::-webkit-scrollbar-thumb {
+    border-radius: 1em;
+    background: #d1a8a8;
+    outline: 2px solid #000000;
+}
+
+.recipe-text::-webkit-scrollbar-track {
+    background: #e0e0e0;
+    border-radius: 1em;
+}
+
+.recipe-text {
+    padding: 0 1em;
+    position: relative;
+    top: 3em;
+    height: 25em;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.intro {
+    text-align: center;
+}
+
+.tt_name_sm {
+    text-align: center;
+    position: absolute;
+    z-index: 1;
+    width: 20em;
+    margin-left: -10em;
+    left: 50%;
+    top: 0em;
+    font-weight: bold;
+    padding: 0.3em 0;
+    filter: drop-shadow(0em 0em 0.1em #ffffff);
+    backdrop-filter: blur(3em);
+}
+
+.xmark_sm {
+    position: absolute;
+    right: .2em;
+    top: .2em;
+    margin-left: 5px;
+    cursor: pointer;
+    line-height: 0px;
+    width: 2em;
+}
+
+.recipe_img {
+    position: relative;
+    top: 0em;
+    width: 20em;
+    margin-left: -10em;
+    left: 50%;
+    padding: 0;
+    border-radius: 2em;
+    margin-bottom: 1em;
+}
+
+.tt_custom_sm {
+    margin: 0;
+    padding: 0;
+}
+
+.tt_mobile_sm {
+    margin-top: 5px;
+}
+
+.btn_simplemaps {
+    position: relative;
+    color: rgb(226, 52, 52);
+    text-decoration: none;
+    background: #ffffff;
+    display: inline-block;
+    padding: 5px 5px;
+    margin: 3em 0;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.43;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid;
+    border-radius: 4px;
+}
+
+.btn_simplemaps:hover {
+    text-decoration: underline;
+}
