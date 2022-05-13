@@ -1,0 +1,37 @@
+.helppopup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(2px);
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.2em;
+    font-weight: 700;
+    line-height: 1, 6em;
+    letter-spacing: 0.02em;
+    color: #e23434;
+}
+
+.helppopup-inner {
+    position: relative;
+    padding: 32px;
+    /* EM?! */
+    width: 100%;
+    max-width: 640px;
+    /* EM?! */
+    background-color: white;
+    border-radius: 0.5em;
+}
+
+.helppopup-inner .close-btn {
+    position: absolute;
+    top: 16px;
+    /* EM?! */
+    right: 16px;
+    /* EM?! */
+}

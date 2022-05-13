@@ -1,0 +1,47 @@
+.footer-content {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 0;
+}
+
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer ul li button {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #c1121f;
+    border: none;
+    background-color: transparent;
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 2em;
+}
+
+.footer ul li button:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.simplemaps {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #c1121f;
+    border: none;
+    background-color: transparent;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.simplemaps:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
