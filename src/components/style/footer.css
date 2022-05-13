@@ -1,47 +1,48 @@
 .footer-content {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    padding: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 0;
+  background-color: #849e96;
 }
 
 .footer ul {
-    padding: 0;
-    list-style: none;
-    text-align: center;
+  padding: 0;
+  list-style: none;
+  text-align: center;
 }
 
 .footer ul li button {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #c1121f;
-    border: none;
-    background-color: transparent;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #c1121f;
+  border: none;
+  background-color: transparent;
 }
 
 .footer ul li {
-    display: inline-block;
-    padding: 0 2em;
+  display: inline-block;
+  padding: 0 4em;
 }
 
 .footer ul li button:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .simplemaps {
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.2em;
-    font-weight: bold;
-    color: #c1121f;
-    border: none;
-    background-color: transparent;
-    text-decoration: none;
-    display: inline-block;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #c1121f;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .simplemaps:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+  transform: scale(1.1);
+  cursor: pointer;
 }

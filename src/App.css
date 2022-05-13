@@ -1,6 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap");
 .screen {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+:root {
+  --global--color-logo-red: #c1121f;
+  --global--color-brick: #8e4849;
+  --global--color-light-dirt: #75635e;
+  --global--color-light-greenish: #849e96;
+  --global--color-greenish: #5b7d72;
+  /* --global--color-medium-dirt: #626D60; */
+  /* --global--color-swamp-green: #685C4E; */
+  --global--color-dirt: #4a443d;
+  --global--color-jet-black: #2c2c2c;
 }

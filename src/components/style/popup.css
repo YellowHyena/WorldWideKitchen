@@ -1,37 +1,72 @@
-.helppopup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(2px);
-    font-family: 'Quicksand', sans-serif;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1, 6em;
-    letter-spacing: 0.02em;
-    color: #e23434;
+.helppopup,
+.contactuspopup,
+.aboutuspopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1, 6em;
+  letter-spacing: 0.02em;
+  color: #e23434;
 }
 
-.helppopup-inner {
-    position: relative;
-    padding: 32px;
-    /* EM?! */
-    width: 100%;
-    max-width: 640px;
-    /* EM?! */
-    background-color: white;
-    border-radius: 0.5em;
+.helppopup-inner,
+.contactuspopup-inner,
+.aboutuspopup-inner {
+  position: relative;
+  padding: 32px; /* EM?! */
+  width: 100%;
+  max-width: 640px; /* EM?! */
+  background-color: white;
+  border-radius: 0.5em;
 }
 
-.helppopup-inner .close-btn {
-    position: absolute;
-    top: 16px;
-    /* EM?! */
-    right: 16px;
-    /* EM?! */
+/* Detta är stäng knappen på (HELP-POPUP) */
+.helppopup-inner .help-close-btn {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
+}
+
+/* Detta är stäng knappen på (CONTACT US-POPUP) */
+.contactuspopup-inner .contactus-close-btn {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
+}
+
+/* Detta är stäng knappen på (ABOUT US-POPUP) */
+.aboutuspopup-inner .aboutus-close-btn {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
+}
+
+/* Hover-inställningar på stäng knapparna */
+.contactus-close-btn:hover,
+.help-close-btn:hover,
+.aboutus-close-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
