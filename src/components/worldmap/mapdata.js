@@ -6,7 +6,7 @@ var simplemaps_worldmap_mapdata = {
         //General settings
 
         width: "responsive", //'700' or 'responsive '
-        background_color: "#FFFFFF", //"#FFFFFF"
+        background_color: "#5B7D72", //"#FFFFFF"
         background_transparent: "no",
         border_color: "#a4a4a4",
         popups: "on_click",
@@ -14,7 +14,7 @@ var simplemaps_worldmap_mapdata = {
         //State defaults  
         // För att ta bort ("Coming Soon...") använd (description:"") inuti lands koden.
         state_description: " <br><br><br>Coming Soon...",
-        state_color: "#000000",
+        state_color: "#2C2C2C",
         state_hover_color: "#C1121F",
         state_url: "", // #2 View Website som togs bort...
         border_size: 1,
@@ -36,7 +36,7 @@ var simplemaps_worldmap_mapdata = {
         location_border: 1, // pin border
         location_hover_border: 2,
         all_locations_inactive: "yes",
-        all_locations_hidden: "no",
+        all_locations_hidden: "yes",
 
         //Label defaults
         label_color: "#d5ddec",
