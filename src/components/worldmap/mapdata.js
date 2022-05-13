@@ -13,7 +13,7 @@ var simplemaps_worldmap_mapdata = {
 
         //State defaults  
         // För att ta bort ("Coming Soon...") använd (description:"") inuti lands koden.
-        state_description: " <br><br><br>Coming Soon...",
+        state_description: "<p class=\"intro\"><br><br><br>Coming Soon... </p>",
         state_color: "#2C2C2C",
         state_hover_color: "#C1121F",
         state_url: "", // #2 View Website som togs bort...
