@@ -16,7 +16,7 @@
     margin-top: 0em;
     font-family: 'Quicksand', sans-serif;
     font-size: 3em;
-    color: #C1121F;
+    color: var(--global--color-logo-red);
 }
 
 #map {
