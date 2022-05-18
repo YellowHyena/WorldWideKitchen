@@ -1,7 +1,5 @@
 .tt_sm {
-    animation-name: appear;
-    animation-timing-function: ease-in-out;
-    animation-duration: .4s;
+    animation: appear .4s ease-in-out;
     border-radius: 0.5em;
     width: 25em;
     height: 30em;
