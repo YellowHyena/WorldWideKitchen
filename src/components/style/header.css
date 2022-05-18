@@ -1,4 +1,4 @@
-.header {
+.header {  
     position: absolute;
     left: 0px;
     top: 0px;
@@ -10,25 +10,54 @@
 }
 
 .name {
-    position: relative;
-    width: 20em;
-    margin-left: -5em;
-    left: 50%;
+    /* position: relative; */
     padding: 0;
-    margin-top: 1em;
+    margin-top: 0em;
     font-family: 'Quicksand', sans-serif;
     font-size: 3em;
-    color: #C1121F;
+    color: var(--global--color-logo-red);
 }
 
 #map {
-    margin-top: 10em;
-    padding: 0;
+  margin-top: 10em;
+  padding: 0;
 }
 
 .logo {
-    position: absolute;
+    /* position: absolute; */
     width: 156px;
     height: 196px;
-    margin-left: 3em;
+
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 1;
+    margin: 0 10em ;
+
+}
+
+/* .grid-item{
+    grid-row-start: 1;
+    grid-row-end: 3;
+} */
+
+.supriseme{
+        font-family: "Quicksand", sans-serif;
+            font-size: 1em;
+            font-weight: bold;
+            border:solid;
+            border-width: 0.2em;
+            border-radius: 2em;
+            padding: 1em;
+            background-color: transparent;
+            margin-top: -1.4em;
+            background-color: #C1121F;
+            color: white;
+}
+.supriseme:hover{
+    transform: scale(1.1);
+    
 }

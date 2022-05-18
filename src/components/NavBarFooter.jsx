@@ -1,20 +1,33 @@
 import React, { useState } from "react";
-import "../App.css"; // Tillfällig css?
 
-// Om något inte används för tillfället är det bara att kommentera ut det :)
-const Footer = ({ setHelpButtonPopup }) => {
+const Footer = ({
+  setHelpButtonPopup,
+  setContactUsButtonPopup,
+  setAboutUsButtonPopup,
+}) => {
   return (
     <div className="footer-content">
       <ul>
-        {/* <li>
-          <button id="about-us-btn">ABOUT US</button>
+        <li>
+          <button
+            id="about-us-btn"
+            onClick={() => {
+              setAboutUsButtonPopup(true);
+            }}
+          >
+            ABOUT US
+          </button>
         </li>
         <li>
-          <button id="donate-btn">DONATE</button>
+          <button
+            id="contact-us-btn"
+            onClick={() => {
+              setContactUsButtonPopup(true);
+            }}
+          >
+            CONTACT US
+          </button>
         </li>
-        <li>
-          <button id="contact-us-btn">CONTACT US</button>
-        </li> */}
 
         <li>
           <button
