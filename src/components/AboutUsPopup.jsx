@@ -10,8 +10,15 @@ function AboutUsPopup(props) {
         >
           x
         </button>
-        <h3>About Us</h3>
-        <p>Content...</p>
+        <h3 className="about-us-head-text">About Us</h3>
+        <p>
+          Welcome to World Wide Kitchen! <br /> We are a nonprofit organization
+          with a passion for food and culture. <br /> If you are looking for
+          inspiration and to gain more kowledge about worlds food, you are in
+          the right place. <br /> World Wide Kitchen open up the doors to the
+          world’s kitchens. <br /> Our service provides easy access to recipes
+          from all around the world in one place.
+        </p>
       </div>
     </div>
   ) : (

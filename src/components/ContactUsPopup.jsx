@@ -10,8 +10,19 @@ function ContactUsPopup(props) {
         >
           x
         </button>
-        <h3>Contact Us</h3>
-        <p>Content...</p>
+        <h3 className="contact-us-head-text">Contact Us</h3>
+        <p>
+          Thank you for visiting us! <br /> We would love to hear from you!
+          <br /> If you have any suggestions or ideas on how we can improve our
+          site or if there is anything you would like to see more of please
+          contact us at:
+          <a
+            className="mail-text"
+            href="mailto:Contactworldwidekitchen@mail.com"
+          >
+            Contactworldwidekitchen@mail.com
+          </a>
+        </p>
       </div>
     </div>
   ) : (
