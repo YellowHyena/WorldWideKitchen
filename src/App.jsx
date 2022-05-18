@@ -7,6 +7,7 @@ import "./components/style/footer.css"
 import "./components/style/header.css"
 import "./components/style/popup.css"
 import "./components/style/recipeCard.css"
+import "./components/worldmap/mapdata"
 
 function App() {
   const [helpButtonPopup, setHelpButtonPopup] = useState(false);
