@@ -5,6 +5,14 @@
     overflow: hidden;
 }
 
+#map {
+    cursor: grab;
+}
+
+#map:active {
+    cursor: grabbing;
+}
+
 :root {
     --global--color-logo-red: #C1121F;
     --global--color-brick: #8E4849;
