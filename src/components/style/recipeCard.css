@@ -71,8 +71,6 @@
     font-weight: bold;
     font-size: 1.3em;
     padding: 0.3em 0;
-    /* filter: drop-shadow(0em 0em 01em #ffffff); */
-    /* backdrop-filter: blur(3em); */
 }
 
 .xmark_sm {

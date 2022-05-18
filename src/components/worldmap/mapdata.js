@@ -6,7 +6,7 @@ var simplemaps_worldmap_mapdata = {
         //General settings
 
         width: "responsive", //'700' or 'responsive '
-        background_color: "#5B7D72", //"#FFFFFF"
+        background_color: "#5B7D72ff", //"#FFFFFF"
         background_transparent: "no",
         border_color: "#a4a4a4",
         popups: "on_click",
@@ -20,7 +20,6 @@ var simplemaps_worldmap_mapdata = {
         border_size: 1,
         all_states_inactive: "no",
         all_states_zoomable: "no",
-
 
         //Location defaults
         //------------------------------------------- STYLING OF LOCATION PIN ---------------------------------------------
