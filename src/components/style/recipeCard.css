@@ -1,6 +1,5 @@
 .tt_sm {
-    animation-name: appear;
-    animation-duration: 3s;
+    animation: appear .4s ease-in-out;
     border-radius: 0.5em;
     width: 25em;
     height: 30em;
@@ -19,11 +18,16 @@
 }
 
 @keyframes appear {
-    from {
-        size: 0%;
+    0% {
+        box-shadow: rgba(0, 0, 0, 0) 0em 0em 0em 300vw;
+        transform: scale(0%);
     }
-    to {
-        size: 100%;
+    20% {
+        transform: scale(110%);
+    }
+    100% {
+        transform: scale(100%);
+        box-shadow: rgba(0, 0, 0, 0.4) 0em 0em 0em 100vw;
     }
 }
 
