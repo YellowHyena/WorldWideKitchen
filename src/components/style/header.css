@@ -47,17 +47,18 @@
 
 .supriseme{
         font-family: "Quicksand", sans-serif;
-            font-size: 1.2em;
+            font-size: 1em;
             font-weight: bold;
-            color: #c1121f;
             border:solid;
             border-width: 0.2em;
             border-radius: 2em;
-            padding: 0.7em;
+            padding: 1em;
             background-color: transparent;
             margin-top: -1.4em;
+            background-color: #C1121F;
+            color: white;
 }
 .supriseme:hover{
-    background-color: #c1121f;
-    color: #FFFFFF;
+    transform: scale(1.1);
+    
 }
