@@ -1,17 +1,22 @@
 import React from "react";
-import "../App.css";
 
 function HelpPopup(props) {
   return props.trigger ? (
     <div className="helppopup">
       <div className="helppopup-inner">
-        <button className="close-btn" onClick={() => props.setTrigger(false)}>
+        <button
+          className="help-close-btn"
+          onClick={() => props.setTrigger(false)}
+        >
           x
         </button>
-        <h3>HELP</h3>
+        <h3 className="help-us-head-text">HELP</h3>
         <p>
-          Explore our World Wide Kitchen by clicking the red pins marking
-          different countries and find yummy recipes from all over the world!
+          Explore World Wide Kitchens map by zooming in and out on each
+          continent and then click on the country that you are interested in to
+          find yummy recipes from all over the world. Click our "surprise me"
+          button for inspiration if you don't know which country to chose.{" "}
+          <br /> Enjoy the ride!
         </p>
       </div>
     </div>
