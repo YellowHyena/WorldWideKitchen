@@ -7,8 +7,13 @@
 
 #map {
     cursor: grab;
-        /* background: radial-gradient(circle, rgba(136, 196, 236, 0.959) 0%, #02457cfb 100%); */
+    /* background: radial-gradient(circle, rgba(136, 196, 236, 0.959) 0%, #02457cfb 100%); */
     background: radial-gradient(circle, rgba(222, 255, 244, 0.959) 0%, #306462fb 100%);
+}
+
+#map_access {
+    pointer-events: none;
+    opacity: 0;
 }
 
 #map:active {
