@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <script src="/src/components/worldmap/mapdata.js"></script>
     <script src="/src/components/worldmap/worldmap.js"></script>
 
+    <script>
+        simplemaps_list.map = simplemaps_worldmap;
+
+        function zoom() {
+            // const recipes = [];
+            const states = simplemaps_worldmap.mapdata.state_specific
+            console.log(states);
+
+            //denna ska få en array med länder som har recept
+            const recipes = states.filter(state => state.color === "#8E4849");
+
+            // for (let state in states) {
+            //     console.log(typeof(state));
+            //     if (state.color === "#8E4849") {
+            //         recipes.push(state)
+            //     }
+            // }
+            // console.log(recipes);
+
+            let max = recipes.length
+            let min = 1
+            let randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+
+            simplemaps_worldmap.state_zoom(recipes[randomNumber]);
+
+            setTimeout(function() {
+                simplemaps_worldmap.popup("state", recipes[randomNumber]);
+            }, 600);
+        }
+    </script>
+
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Wide Kitchen</title>
-  </head>
+</head>
 
-  <body>
-    <div id="root"></div>
+<body>
+    <button style="z-index: 1000; position:absolute;" onclick=zoom()>hello</button>
+    <div id="root">
+    </div>
     <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+</body>
+
 </html>

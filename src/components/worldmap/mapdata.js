@@ -52,7 +52,7 @@ var simplemaps_worldmap_mapdata = {
         state_image_url: "",
         state_image_position: "",
         location_image_url: "",
-      
+
         manual_zoom: "yes",
         zoom: "yes",
         back_image: "no",
@@ -74,7 +74,7 @@ var simplemaps_worldmap_mapdata = {
         popup_nocss: "yes",
         popup_centered: "yes",
     },
-  
+
     state_specific: {
         AF: {
             name: "Afghanistan",
@@ -158,7 +158,8 @@ var simplemaps_worldmap_mapdata = {
         },
         BR: {
             name: "Brazil",
-             description: " <div class=\"recipe-text\"> <img src=\"https://www.laylita.com/recipes/wp-content/uploads/2014/06/Recipe-for-perfect-caipirinhas-650x433.jpg\" class=\"recipe_img\" /> <p class=\"intro\">CAIPIRINHA</br>Brazil’s national drink, the Caipirinha, is refreshing and easy to make. The spirit Cachaça is distilled from the fermented juice of sugar cane and has a unique flavour. It’s unclear exactly when the Caipirinha first appeared, but many historians believe it was served in the early 20th century as a remedy for illness. Regardless of how or when it was born, drinkers have gravitated toward its pleasing flavours and heady effects ever since.<p></br> Recipe: </br>Servings 2 Preparation time 5 minutes</br>Ingredients: </br>2 lime, cut into wedges</br>4 teaspoons sugar</br>12 cl cachaça</br>Garnish:</br>lime wheel</br></br> Method: </br>1.In a double rocks glass, muddle the lime wedges and sugar.</br>2.Fill the glass with ice, add the cachaça, and stir briefly.</br>3.Garnish with a lime wheel.</br></br>Recipe by Liquor </div>",
+
+            description: " <div class=\"recipe-text\"> <img src=\"https://www.laylita.com/recipes/wp-content/uploads/2014/06/Recipe-for-perfect-caipirinhas-650x433.jpg\" class=\"recipe_img\" /> <p class=\"intro\">CAIPIRINHA</br>Brazil’s national drink, the Caipirinha, is refreshing and easy to make. The spirit Cachaça is distilled from the fermented juice of sugar cane and has a unique flavour. It’s unclear exactly when the Caipirinha first appeared, but many historians believe it was served in the early 20th century as a remedy for illness. Regardless of how or when it was born, drinkers have gravitated toward its pleasing flavours and heady effects ever since.<p></br> Recipe: </br>Servings 2 Preparation time 5 minutes</br>Ingredients: </br>2 lime, cut into wedges</br>4 teaspoons sugar</br>12 cl cachaça</br>Garnish:</br>lime wheel</br></br> Method: </br>1.In a double rocks glass, muddle the lime wedges and sugar.</br>2.Fill the glass with ice, add the cachaça, and stir briefly.</br>3.Garnish with a lime wheel.</br></br>Recipe by Liquor </div>",
             url: "https://www.liquor.com/recipes/caipirinha/",
             color: "#8E4849"
         },
@@ -370,7 +371,7 @@ var simplemaps_worldmap_mapdata = {
         },
         IT: {
             name: "Italy",
-             description: " <div class=\"recipe-text\"> <img src=\"https://www.tasteatlas.com/images/recipes/05183524d4204a3f8b92f1c1d9392da2.jpg?mw=910\" class=\"recipe_img\" /> <p class=\"intro\"> RAGÙ ALLA BOLOGNESE </br></br> What is to the rest of the world known as spaghetti Bolognese, practically doesn't exist in Italy, let alone in Bologna. This dish has been traced as far back as the 17th century, and for the locals, the ragù is a very serious matter. According to the Italian Academy of Cuisine, this is the most typical and classic-tasting rendition of Bologna's famed meat sauce and is currently the official version. Traditionally, ragù alla Bolognese is served with tagliatelle. <p></br> Recipe: </br> Servings 4 Cooking time 3 1⁄2 hours </br>Ingredients: </br>3 tbsp olive oil or 50g butter </br>300g coarsely ground beef – preferably skirt steak, chuck or flank </br>150g pancetta (unsmoked) </br>50g yellow carrot </br>50g celery rib </br>50g onion </br>300g tomato passata or peeled tomatoes </br>1.2 L beef or poultry stock, as needed </br>240 ml whole milk </br>120 ml red wine </br>salt and pepper, to taste </br>120 ml whipping cream (optional) </br>360g tagliatelle, fresh or dried </br>Method: </br>1.Finely dice the yellow carrot, the rib of celery, and the onion, then finely chop. </br>2.Finely dice the pancetta then finely chop it until it turns into a paste.</br>3.Add the pancetta to a 20 cm terracotta dish or a thick aluminum pan, and sauté until rendered. </br>4.Add the butter or olive oil to the pancetta, then add the root vegetables. Sweat the vegetables for about 10-15 minutes until softened. </br>5.Add the coarsely ground beef and stir-fry until browned and roasted, and there is no liquid left in the dish/pan. Pour in the wine and stir. </br>6.Once the alcohol has evaporated, pour in the passata or peeled tomatoes and stir to incorporate. </br>7.Simmer for 2 hours, covered, adding stock if the ragù gets dry, and stirring occasionally. </br>8.After 2 hours have passed, pour in the milk to balance out the acidity of the tomatoes, and stir and cook some more. Season with salt and pepper to taste. </br>9.If using dried tagliatelle, pour in the whipping cream, stir, and cook just until heated through (optional). </br>10.To cook the pasta, fill a large pot with water (1 L per 100g of pasta), then bring to a boil and season generously with salt. </br>11.Drop the tagliatelle into the water and cook as instructed on the packaging or until al dente. </br>12.Drain, transfer into a large bowl, then add the ragù and mix well. </br>13.Divide between warmed plates, taking care there are equal amounts of pasta and ragù on each plate, then serve. </br>  </br> Recipe by TasteAtlas </div>",
+            description: " <div class=\"recipe-text\"> <img src=\"https://www.tasteatlas.com/images/recipes/05183524d4204a3f8b92f1c1d9392da2.jpg?mw=910\" class=\"recipe_img\" /> <p class=\"intro\"> RAGÙ ALLA BOLOGNESE </br></br> What is to the rest of the world known as spaghetti Bolognese, practically doesn't exist in Italy, let alone in Bologna. This dish has been traced as far back as the 17th century, and for the locals, the ragù is a very serious matter. According to the Italian Academy of Cuisine, this is the most typical and classic-tasting rendition of Bologna's famed meat sauce and is currently the official version. Traditionally, ragù alla Bolognese is served with tagliatelle. <p></br> Recipe: </br> Servings 4 Cooking time 3 1⁄2 hours </br>Ingredients: </br>3 tbsp olive oil or 50g butter </br>300g coarsely ground beef – preferably skirt steak, chuck or flank </br>150g pancetta (unsmoked) </br>50g yellow carrot </br>50g celery rib </br>50g onion </br>300g tomato passata or peeled tomatoes </br>1.2 L beef or poultry stock, as needed </br>240 ml whole milk </br>120 ml red wine </br>salt and pepper, to taste </br>120 ml whipping cream (optional) </br>360g tagliatelle, fresh or dried </br>Method: </br>1.Finely dice the yellow carrot, the rib of celery, and the onion, then finely chop. </br>2.Finely dice the pancetta then finely chop it until it turns into a paste.</br>3.Add the pancetta to a 20 cm terracotta dish or a thick aluminum pan, and sauté until rendered. </br>4.Add the butter or olive oil to the pancetta, then add the root vegetables. Sweat the vegetables for about 10-15 minutes until softened. </br>5.Add the coarsely ground beef and stir-fry until browned and roasted, and there is no liquid left in the dish/pan. Pour in the wine and stir. </br>6.Once the alcohol has evaporated, pour in the passata or peeled tomatoes and stir to incorporate. </br>7.Simmer for 2 hours, covered, adding stock if the ragù gets dry, and stirring occasionally. </br>8.After 2 hours have passed, pour in the milk to balance out the acidity of the tomatoes, and stir and cook some more. Season with salt and pepper to taste. </br>9.If using dried tagliatelle, pour in the whipping cream, stir, and cook just until heated through (optional). </br>10.To cook the pasta, fill a large pot with water (1 L per 100g of pasta), then bring to a boil and season generously with salt. </br>11.Drop the tagliatelle into the water and cook as instructed on the packaging or until al dente. </br>12.Drain, transfer into a large bowl, then add the ragù and mix well. </br>13.Divide between warmed plates, taking care there are equal amounts of pasta and ragù on each plate, then serve. </br>  </br> Recipe by TasteAtlas </div>",
             url: "https://www.tasteatlas.com/bolognese/recipe/",
             color: "#8E4849"
 
@@ -949,7 +950,7 @@ var simplemaps_worldmap_mapdata = {
 
 
         }
-    }, 
+    },
     locations: {
         "stockholm/sweden": {
             lat: 59.334591,
