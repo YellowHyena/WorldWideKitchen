@@ -3,10 +3,11 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 5em;
+    height: 10em;
     margin-bottom: 5em;
-    background: #feffff;
+    background-color:  transparent 0.5s ease-in-out;
     padding: 0;
+    backdrop-filter: blur(1em);
 }
 
 .name {
@@ -48,7 +49,7 @@
         font-family: "Quicksand", sans-serif;
             font-size: 1em;
             font-weight: bold;
-            border:solid;
+            border:none;
             border-width: 0.2em;
             border-radius: 2em;
             padding: 1em;
