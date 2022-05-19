@@ -7,7 +7,8 @@
 
 #map {
     cursor: grab;
-    background: radial-gradient(circle, #849e96 0%, #5b7d72 100%);
+        /* background: radial-gradient(circle, rgba(136, 196, 236, 0.959) 0%, #02457cfb 100%); */
+    background: radial-gradient(circle, rgba(222, 255, 244, 0.959) 0%, #306462fb 100%);
 }
 
 #map:active {
@@ -24,6 +25,5 @@
     /* --global--color-swamp-green: #685C4E; */
     --global--color-dirt: #4A443D;
     --global--color-jet-black: #2C2C2C;
+    --global-color-creamy-red: #ebe2db;
 }
-
-

@@ -15,7 +15,7 @@ var simplemaps_worldmap_mapdata = {
         state_color: "#2C2C2C",
         state_hover_color: "#C1121F",
         state_url: "", // #2 View Website som togs bort...
-        border_size: 1,
+        border_size: 0.5,
         all_states_inactive: "no",
         all_states_zoomable: "no",
 
