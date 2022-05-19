@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function HelpPopup(props) {
   return props.trigger ? (
@@ -12,16 +12,16 @@ function HelpPopup(props) {
         </button>
         <h3 className="help-us-head-text">HELP</h3>
         <p>
-          Explore World Wide Kitchens map by zooming in and out on each
+          Explore World Wide Kitchen's map by zooming in and out on each
           continent and then click on the country that you are interested in to
-          find yummy recipes from all over the world. Click our "surprise me"
-          button for inspiration if you don't know which country to chose.{" "}
+          find yummy recipes from all over the world. Click our "Surprise Me"
+          button for inspiration if you don't know which country to choose.{' '}
           <br /> Enjoy the ride!
         </p>
       </div>
     </div>
   ) : (
-    ""
+    ''
   );
 }
 

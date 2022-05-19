@@ -27,7 +27,7 @@ function App() {
       <header className="header">
         <div className="flex-container">
           <img src={logo} className="logo"></img>
-          <h1 className='name'>WORLD WIDE KITCHEN</h1>
+          <h1 className="name">WORLD WIDE KITCHEN</h1>
           <button className="supriseme">Surprise me!</button>
 
         </div>

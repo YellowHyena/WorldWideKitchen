@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 function ContactUsPopup(props) {
   return props.trigger ? (
@@ -16,17 +16,14 @@ function ContactUsPopup(props) {
           <br /> If you have any suggestions or ideas on how we can improve our
           site or if there is anything you would like to see more of please
           contact us at:
-          <a
-            className="mail-text"
-            href="mailto:Contactworldwidekitchen@mail.com"
-          >
-            Contactworldwidekitchen@mail.com
+          <a className="mail-text" href="mailto:worldwidekitchen@mail.com">
+            worldwidekitchen@mail.com
           </a>
         </p>
       </div>
     </div>
   ) : (
-    ""
+    ''
   );
 }
 
