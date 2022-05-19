@@ -3,10 +3,11 @@
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 5em;
+    height: 10em;
     margin-bottom: 5em;
-    background: #feffff;
+    background-color:  transparent 0.5s ease-in-out;
     padding: 0;
+    backdrop-filter: blur(1em);
 }
 
 .name {
@@ -45,19 +46,38 @@
 } */
 
 .supriseme{
-        font-family: "Quicksand", sans-serif;
+        /* font-family: "Quicksand", sans-serif;
             font-size: 1em;
             font-weight: bold;
-            border:solid;
-            border-width: 0.2em;
-            border-radius: 2em;
+            border:none;
+            /* border-width: 0.2em; */
+            /* border-radius: 2em;
             padding: 1em;
             background-color: transparent;
             margin-top: -1.4em;
             background-color: #C1121F;
             color: white;
+            backdrop-filter: blur(2px); */
+            border: none;
+            font-family: "Quicksand", sans-serif;
+                background: #C1121F;
+                color: #ffffff;
+                font-weight: 200;
+                padding: 20px;
+                font-size: large;
+                text-transform: uppercase;
+                border-radius: 6px;
+                display: inline-block;
+                transition: all 0.3s ease 0s;
+
 }
 .supriseme:hover{
     transform: scale(1.1);
-    
+    color: #f7f5f4; 
+        font-weight: 700;
+        letter-spacing: 3px;
+        background: #e60303b2;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(230, 13, 13, 0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(112, 48, 48, 0.57);
+        transition: all 0.3s ease 0s;
 }

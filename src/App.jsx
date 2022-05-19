@@ -27,8 +27,8 @@ function App() {
       <header className="header">
         <div className="flex-container">
           <img src={logo} className="logo"></img>
-          <h1 className="name">WORLD WIDE KITCHEN</h1>
-          <button className="supriseme">Surprise me!</button>
+          <h1 className='name'>WORLD WIDE KITCHEN</h1>
+          <button className="supriseme">Surprise me</button>
 
         </div>
       </header>
@@ -53,3 +53,4 @@ function App() {
 }
 
 export default App;
+  
