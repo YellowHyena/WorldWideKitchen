@@ -7,23 +7,20 @@
     <script src="/src/components/worldmap/worldmap.js"></script>
 
     <script>
-        simplemaps_list.map = simplemaps_worldmap;
-
         function zoom() {
-            // const recipes = [];
+            const recipes = [];
             const states = simplemaps_worldmap.mapdata.state_specific
-            console.log(states);
+            const statesAsArray = Object.entries(states);
 
-            //denna ska få en array med länder som har recept
-            const recipes = states.filter(state => state.color === "#8E4849");
+            for (let i = 0; i < statesAsArray.length; i++) {
+                const state = statesAsArray[i];
+                const stateAsArray = Object.entries(state);
+                console.log(stateAsArray[0][1]);
 
-            // for (let state in states) {
-            //     console.log(typeof(state));
-            //     if (state.color === "#8E4849") {
-            //         recipes.push(state)
-            //     }
-            // }
-            // console.log(recipes);
+                if (stateAsArray[1][1].color === "#8E4849") {
+                    recipes.push(stateAsArray[0][1])
+                }
+            }
 
             let max = recipes.length
             let min = 1
@@ -43,7 +40,13 @@
 </head>
 
 <body>
-    <button style="z-index: 1000; position:absolute;" onclick=zoom()>hello</button>
+    <header class="header">
+        <div class="flex-container">
+            <img src='./src/components/assets/logo.svg' class="logo">
+            <h1 class='name'>WORLD WIDE KITCHEN</h1>
+            <button class="supriseme" onclick=zoom()>Surprise me</button>
+        </div>
+    </header>
     <div id="root">
     </div>
     <script type="module" src="/src/main.jsx"></script>

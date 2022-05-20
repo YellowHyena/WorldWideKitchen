@@ -3,12 +3,13 @@
     width: 100%;
     height: 100%;
     overflow: hidden;
+    background: radial-gradient(circle, rgba(222, 255, 244, 0.959) 0%, #306462fb 100%);
 }
 
 #map {
     cursor: grab;
     /* background: radial-gradient(circle, rgba(136, 196, 236, 0.959) 0%, #02457cfb 100%); */
-    background: radial-gradient(circle, rgba(222, 255, 244, 0.959) 0%, #306462fb 100%);
+    /* background: radial-gradient(circle, rgba(222, 255, 244, 0.959) 0%, #306462fb 100%); */
 }
 
 #map_access {
@@ -21,7 +22,7 @@
 }
 
 :root {
-    --global--color-logo-red: #C1121F;  
+    --global--color-logo-red: #C1121F;
     --global--color-brick: #8E4849;
     --global--color-light-dirt: #75635E;
     --global--color-light-greenish: #849E96;
