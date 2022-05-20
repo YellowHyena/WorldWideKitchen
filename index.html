@@ -40,7 +40,13 @@
 </head>
 
 <body>
-    <button style="z-index: 1000; position:absolute;" onclick=zoom()>hello</button>
+    <header class="header">
+        <div class="flex-container">
+            <img src='./src/components/assets/logo.svg' class="logo">
+            <h1 class='name'>WORLD WIDE KITCHEN</h1>
+            <button class="supriseme" onclick=zoom()>Surprise me</button>
+        </div>
+    </header>
     <div id="root">
     </div>
     <script type="module" src="/src/main.jsx"></script>

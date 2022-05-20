@@ -24,14 +24,7 @@ function App() {
       <div className="screen">
         <div id="map"></div>
       </div>
-      <header className="header">
-        <div className="flex-container">
-          <img src={logo} className="logo"></img>
-          <h1 className='name'>WORLD WIDE KITCHEN</h1>
-          <button className="supriseme">Surprise me</button>
 
-        </div>
-      </header>
       <footer className="footer">
         <NavBarFooter
           setHelpButtonPopup={setHelpButtonPopup}
