@@ -11,6 +11,16 @@ const Footer = ({
       <ul>
         <li>
           <button
+            id="donate-btn"
+            onClick={() => {
+              setDonateButtonPopup(true);
+            }}
+          >
+            DONATE
+          </button>
+        </li>
+        <li>
+          <button
             id="about-us-btn"
             onClick={() => {
               setAboutUsButtonPopup(true);
@@ -38,16 +48,6 @@ const Footer = ({
             }}
           >
             HELP
-          </button>
-        </li>
-        <li>
-          <button
-            id="donate-btn"
-            onClick={() => {
-              setDonateButtonPopup(true);
-            }}
-          >
-            DONATE
           </button>
         </li>
         <li>
