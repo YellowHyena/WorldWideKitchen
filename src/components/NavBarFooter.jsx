@@ -4,6 +4,7 @@ const Footer = ({
   setHelpButtonPopup,
   setContactUsButtonPopup,
   setAboutUsButtonPopup,
+  setDonateButtonPopup,
 }) => {
   return (
     <div className="footer-content">
@@ -37,6 +38,16 @@ const Footer = ({
             }}
           >
             HELP
+          </button>
+        </li>
+        <li>
+          <button
+            id="donate-btn"
+            onClick={() => {
+              setDonateButtonPopup(true);
+            }}
+          >
+            DONATE
           </button>
         </li>
         <li>
