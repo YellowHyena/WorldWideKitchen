@@ -161,11 +161,11 @@
 }
 
 .next-btn:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
 }
 
 .back-btn:hover{
-    transform: scale(1.1);
+    /* transform: scale(1.1); */
     box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
 }
