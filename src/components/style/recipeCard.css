@@ -143,7 +143,7 @@
     justify-content: center;
 }
 
-.recipe-btn > button {
+.recipe-btn>button {
     margin-bottom: 0.5em;
     padding: 0.5em;
     border-radius: 50%;
@@ -160,12 +160,12 @@
     margin-left: 1em;
 }
 
-.next-btn:hover{
+.next-btn:hover {
     /* transform: scale(1.1); */
     box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
 }
 
-.back-btn:hover{
+.back-btn:hover {
     /* transform: scale(1.1); */
     box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
 }
