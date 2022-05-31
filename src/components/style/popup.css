@@ -36,6 +36,11 @@
   animation: appearNoShadow 0.4s ease-in-out;
 }
 
+/* EXTRA FÖR ATT CENTRERA DONATE NOW */
+.donatepopup-inner {
+  text-align: center;
+}
+
 /* Detta är stäng knappen på (HELP-POPUP) */
 .helppopup-inner .help-close-btn {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
@@ -83,7 +88,8 @@
 /* Hover-inställningar på stäng knapparna */
 .contactus-close-btn:hover,
 .help-close-btn:hover,
-.aboutus-close-btn:hover .donate-close-btn:hover {
+.aboutus-close-btn:hover,
+.donate-close-btn:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
@@ -137,3 +143,43 @@ p {
     transform: scale(100%);
   }
 }
+
+.donate-picture {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  box-shadow: 2px 2px 12px black;
+}
+
+.donate-text {
+  margin: 2em 0 2em 0;
+}
+
+.donate-now-button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  color: rgb(116, 71, 116);
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.donate-now-button:hover {
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.donate-now;
