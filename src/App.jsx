@@ -13,6 +13,7 @@ import './components/style/footer.css';
 import './components/style/header.css';
 import './components/style/popup.css';
 import './components/style/recipeCard.css';
+import './components/style/search.css'
 
 function App() {
   const [helpButtonPopup, setHelpButtonPopup] = useState(false);

@@ -4,9 +4,7 @@
     width: 25em;
     height: 30em;
     box-shadow: 0.3em 0.3em 0.4em rgba(0, 0, 0, .5);
-    /* z-index: 10; */
     background-color: var(--global-color-creamy-red);
-    /* font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif; */
     font-family: 'Quicksand', sans-serif;
     font-size: 1.2em;
     font-weight: 700;

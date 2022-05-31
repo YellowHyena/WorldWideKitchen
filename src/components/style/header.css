@@ -8,6 +8,7 @@
     background-color: transparent 0.5s ease-in-out;
     padding: 0;
     backdrop-filter: blur(1em);
+    z-index: 1;
 }
 
 .name {
