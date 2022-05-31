@@ -1,4 +1,3 @@
-import logo from './components/assets/logo.svg';
 import './App.css';
 import { useState } from 'react';
 // Footer

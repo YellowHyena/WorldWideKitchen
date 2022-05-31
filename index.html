@@ -35,17 +35,78 @@
     </script>
 
     <!--Flera recept per kort...-->
+
     <script>
         function nextRecipe() {
-            let recipes = simplemaps_worldmap.mapdata.state_specific.SE.recipes
-            let card = document.getElementsByClassName("tt_custom_sm")[0]
+            // hämtar states och gör dem till en array
+            const states = simplemaps_worldmap.mapdata.state_specific
+            const statesAsArray = Object.entries(states);
 
-            if (card.innerHTML.toString() == recipes[0]) {
-                card.innerHTML = recipes[1]
+            //hämtar kortet och förkortningen på landet (exempel; Sverige = SE)
+            const card = document.getElementsByClassName("tt_custom_sm")[0]
+            const name = document.getElementsByClassName("tt_name_sm")[0].innerHTML
+
+            //loopar igenom states...
+            for (let i = 0; i < statesAsArray.length; i++) {
+                const state = statesAsArray[i];
+                const stateAsArray = Object.entries(state);
+                //...tills den hittar samma namn som kortet har
+                if (stateAsArray[1][1].name === name) {
+
+                    //??????????
+                    const hjälpMigVadGörJag = Object.entries(stateAsArray[1][1])
+                    const recipes = hjälpMigVadGörJag[3][1]
+
+
+                    //sen kollar den vilket recept som visas och byter till nästa om det går
+                    for (let i = 0; i < recipes.length - 1; i++) {
+                        const recipe = recipes[i];
+                        if (card.innerHTML == recipe.replace('\\', '')) {
+                            if (i <= recipes.length) {
+                                console.log(i);
+                                card.innerHTML = recipes[i + 1]
+                            }
+                            return
+                        }
+                    }
+                }
             }
-            console.log('innerHTML is recipe[0]?', card.innerHTML == recipes[0]);
-            console.log('innerHTML is recipe[1]?', card.innerHTML == recipes[1]);
-            // console.log('innerHTML is recipe[0]?', card.innerHTML == recipes[0]);
+        }
+    </script>
+    <script>
+        function previousRecipe() {
+            // hämtar states och gör dem till en array
+            const states = simplemaps_worldmap.mapdata.state_specific
+            const statesAsArray = Object.entries(states);
+
+            //hämtar kortet och förkortningen på landet (exempel; Sverige = SE)
+            const card = document.getElementsByClassName("tt_custom_sm")[0]
+            const name = document.getElementsByClassName("tt_name_sm")[0].innerHTML
+
+            //loopar igenom states...
+            for (let i = 0; i < statesAsArray.length; i++) {
+                const state = statesAsArray[i];
+                const stateAsArray = Object.entries(state);
+                //...tills den hittar samma namn som kortet har
+                if (stateAsArray[1][1].name === name) {
+
+                    //??????????
+                    const hjälpMigVadGörJag = Object.entries(stateAsArray[1][1])
+                    const recipes = hjälpMigVadGörJag[3][1]
+
+                    //sen kollar den vilket recept som visas och byter till förra om det går
+                    for (let i = recipes.length - 1; i >= 0; i--) {
+                        const recipe = recipes[i];
+                        if (card.innerHTML == recipe.replace('\\', '')) {
+                            if (i >= 1) {
+                                console.log(i);
+                                card.innerHTML = recipes[i - 1]
+                            }
+                            return
+                        }
+                    }
+                }
+            }
         }
     </script>
 
@@ -56,9 +117,7 @@
 
 <body>
     <header class="header">
-        <picture>
-            <img src='./src/components/assets/logo.svg' class="logo">
-        </picture>
+        <img src='./src/components/assets/logo.svg' class="logo">
         <div class="name">
             <h1 class='MainName'>WORLD WIDE KITCHEN</h1>
             <h3 class='subName'>─WE OPEN THE DOORS TO THE WORLD'S KITCHENS─</h3>
@@ -132,31 +191,6 @@
                         }
                     }
                 });
-                /*execute a function presses a key on the keyboard:*/
-                inp.addEventListener("keydown", function(e) {
-                    let x = document.getElementById(this.id + "autocomplete-list");
-                    if (x) x = x.getElementsByTagName("div");
-                    if (e.keyCode == 40) {
-                        /*If the arrow DOWN key is pressed,
-                        increase the currentFocus variable:*/
-                        currentFocus++;
-                        /*and and make the current item more visible:*/
-                        addActive(x);
-                    } else if (e.keyCode == 38) { //up
-                        /*If the arrow UP key is pressed,
-                        decrease the currentFocus variable:*/
-                        currentFocus--;
-                        /*and and make the current item more visible:*/
-                        addActive(x);
-                    } else if (e.keyCode == 13) {
-                        /*If the ENTER key is pressed, prevent the form from being submitted,*/
-                        e.preventDefault();
-                        if (currentFocus > -1) {
-                            /*and simulate a click on the "active" item:*/
-                            if (x) x[currentFocus].click();
-                        }
-                    }
-                });
 
                 function addActive(x) {
                     /*a function to classify an item as "active":*/
@@ -193,7 +227,7 @@
             }
             const array = []
 
-            console.log(states);
+            // console.log(states);
             for (let i = 0; i < states.length; i++) {
                 const state = states[i];
                 const stateAsArray = Object.entries(state);

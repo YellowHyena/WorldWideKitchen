@@ -8,6 +8,8 @@
 
 #map {
     cursor: grab;
+    margin-top: 10em;
+    padding: 0;
 }
 
 #map_access {
@@ -31,4 +33,3 @@
     --global--color-jet-black: #2C2C2C;
     --global-color-creamy-red: #ebe2db;
 }
-
