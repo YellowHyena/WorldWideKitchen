@@ -6,7 +6,6 @@
     <script src="/src/components/worldmap/mapdata.js"></script>
     <script src="/src/components/worldmap/worldmap.js"></script>
 
-
     <script>
         function surprise() {
             const recipes = [];
@@ -35,7 +34,21 @@
         }
     </script>
 
+    <!--Flera recept per kort...-->
+    <script>
+        function nextRecipe() {
+            let recipes = simplemaps_worldmap.mapdata.state_specific.SE.recipes
+            let card = document.getElementsByClassName("tt_custom_sm")[0]
 
+            if (card.innerHTML.toString() == recipes[0]) {
+                card.innerHTML = recipes[1]
+            }
+            console.log('innerHTML is recipe[0]?', card.innerHTML == recipes[0]);
+            console.log('innerHTML is recipe[1]?', card.innerHTML == recipes[1]);
+            // console.log('innerHTML is recipe[0]?', card.innerHTML == recipes[0]);
+        }
+    </script>
+  
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Wide Kitchen</title>

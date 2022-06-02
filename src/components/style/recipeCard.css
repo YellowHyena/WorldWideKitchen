@@ -134,3 +134,36 @@
 .btn_simplemaps:hover {
     text-decoration: underline;
 }
+
+.recipe-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.recipe-btn>button {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    border-radius: 50%;
+    border: solid 1px var(--global--color-light-dirt);
+    color: var(--global--color-light-dirt);
+    background-color: var(--global-color-creamy-red)
+}
+
+.back-btn {
+    margin-left: 1em;
+}
+
+.next-btn {
+    margin-left: 1em;
+}
+
+.next-btn:hover {
+    /* transform: scale(1.1); */
+    box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
+}
+
+.back-btn:hover {
+    /* transform: scale(1.1); */
+    box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
+}
