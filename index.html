@@ -57,7 +57,8 @@
                     const hjälpMigVadGörJag = Object.entries(stateAsArray[1][1])
                     const recipes = hjälpMigVadGörJag[3][1]
 
-
+                    console.log(recipes[0]);
+                    console.log(card.innerHTML);
                     //sen kollar den vilket recept som visas och byter till nästa om det går
                     for (let i = 0; i < recipes.length - 1; i++) {
                         const recipe = recipes[i];
@@ -94,6 +95,9 @@
                     const hjälpMigVadGörJag = Object.entries(stateAsArray[1][1])
                     const recipes = hjälpMigVadGörJag[3][1]
 
+                    console.log(recipes[1]);
+                    console.log(card.innerHTML);
+
                     //sen kollar den vilket recept som visas och byter till förra om det går
                     for (let i = recipes.length - 1; i >= 0; i--) {
                         const recipe = recipes[i];
@@ -109,7 +113,7 @@
             }
         }
     </script>
-  
+
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Wide Kitchen</title>
