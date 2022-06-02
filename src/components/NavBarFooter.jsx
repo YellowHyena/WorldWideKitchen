@@ -4,10 +4,21 @@ const Footer = ({
   setHelpButtonPopup,
   setContactUsButtonPopup,
   setAboutUsButtonPopup,
+  setDonateButtonPopup,
 }) => {
   return (
     <div className="footer-content">
       <ul>
+        <li>
+          <button
+            id="donate-btn"
+            onClick={() => {
+              setDonateButtonPopup(true);
+            }}
+          >
+            DONATE
+          </button>
+        </li>
         <li>
           <button
             id="about-us-btn"

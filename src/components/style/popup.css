@@ -1,127 +1,185 @@
+/* Hela Popup-en */
 .helppopup,
 .contactuspopup,
-.aboutuspopup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.2);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    backdrop-filter: blur(2px);
-    font-family: "Quicksand", sans-serif;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1, 6em;
-    letter-spacing: 0.02em;
-    color: #e23434;
+.aboutuspopup,
+.donatepopup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(2px);
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 1, 6em;
+  letter-spacing: 0.02em;
+  color: #e23434;
 }
 
+/* Endast INNER */
 .helppopup-inner,
 .contactuspopup-inner,
-.aboutuspopup-inner {
-    position: relative;
-    padding: 32px;
-    /* EM?! */
-    width: 100%;
-    max-width: 640px;
-    /* EM?! */
-    background-color: var(--global-color-creamy-red);
-    border-radius: 0.5em;
-    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.486);
-    animation: appearNoShadow 0.4s ease-in-out;
+.aboutuspopup-inner,
+.donatepopup-inner {
+  position: relative;
+  padding: 32px; /* EM?! */
+  width: 100%;
+  max-width: 640px; /* EM?! */
+  background-color: var(--global-color-creamy-red);
+  border-radius: 0.5em;
+  box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.486);
+  animation: appearNoShadow 0.4s ease-in-out;
 }
 
+/* EXTRA FÖR ATT CENTRERA DONATE NOW */
+.donatepopup-inner {
+  text-align: center;
+}
 
 /* Detta är stäng knappen på (HELP-POPUP) */
-
 .helppopup-inner .help-close-btn {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
-    position: absolute;
-    top: -0.2em;
-    right: 0;
-    border: none;
-    background-color: transparent;
-    font-size: 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
 }
-
 
 /* Detta är stäng knappen på (CONTACT US-POPUP) */
-
 .contactuspopup-inner .contactus-close-btn {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
-    position: absolute;
-    top: -0.2em;
-    right: 0;
-    border: none;
-    background-color: transparent;
-    font-size: 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
 }
-
 
 /* Detta är stäng knappen på (ABOUT US-POPUP) */
-
 .aboutuspopup-inner .aboutus-close-btn {
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
-    position: absolute;
-    top: -0.2em;
-    right: 0;
-    border: none;
-    background-color: transparent;
-    font-size: 2em;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
 }
 
+/* Detta är stäng knappen på (DONATE-POPUP) */
+.donatepopup-inner .donate-close-btn {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande";
+  position: absolute;
+  top: -0.2em;
+  right: 0;
+  border: none;
+  background-color: transparent;
+  font-size: 2em;
+}
 
 /* Hover-inställningar på stäng knapparna */
-
 .contactus-close-btn:hover,
 .help-close-btn:hover,
-.aboutus-close-btn:hover {
-    transform: scale(1.1);
-    cursor: pointer;
+.aboutus-close-btn:hover,
+.donate-close-btn:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
+/* Head texten för varje popup */
 .about-us-head-text,
 .contact-us-head-text,
-.help-us-head-text {
-    color: #2c2c2c;
-    text-decoration: underline;
+.help-us-head-text,
+.donate-head-text {
+  color: #2c2c2c;
+  text-decoration: underline;
 }
 
+/* Mail-länk-text inställningar #1 */
 .mail-text {
-    color: rgb(116, 71, 116);
-    align-items: center;
-    font-size: 1.3em;
-    text-align: center;
-    display: block;
-    padding-top: 1.5em;
+  color: rgb(116, 71, 116);
+  align-items: center;
+  font-size: 1.3em;
+  text-align: center;
+  display: block;
+  padding-top: 1.5em;
 }
 
+/* Mail-länk-text inställningar #2 */
 .mail-text:after {
-    content: "";
-    position: absolute;
-    background-color: red;
+  content: "";
+  position: absolute;
+  background-color: red;
 }
 
+/* Mail-länk-text inställningar #3 */
 .mail-text:hover {
-    transform: scale(1.02);
+  transform: scale(1.02);
 }
 
+/* Standard text inställningar */
 p {
-    color: #8e4849;
-    font-size: 0.8em;
+  color: #8e4849;
+  font-size: 0.8em;
 }
 
+/* Pop-up effekt inställningar */
 @keyframes appearNoShadow {
-    0% {
-        transform: scale(0%);
-    }
-    20% {
-        transform: scale(110%);
-    }
-    100% {
-        transform: scale(100%);
-    }
+  0% {
+    transform: scale(0%);
+  }
+  20% {
+    transform: scale(110%);
+  }
+  100% {
+    transform: scale(100%);
+  }
 }
+
+.donate-picture {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10%;
+  box-shadow: 2px 2px 12px black;
+}
+
+.donate-text {
+  margin: 2em 0 2em 0;
+}
+
+.donate-now-button {
+  font-family: "Quicksand", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  color: rgb(116, 71, 116);
+  align-items: center;
+  font-size: 1.2em;
+}
+
+.donate-now-button:hover {
+  background-image: linear-gradient(
+    to right,
+    #462523 0,
+    #cb9b51 22%,
+    #f6e27a 45%,
+    #f6f2c0 50%,
+    #f6e27a 55%,
+    #cb9b51 78%,
+    #462523 100%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+}
+
+.donate-now;

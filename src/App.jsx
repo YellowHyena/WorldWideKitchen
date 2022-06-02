@@ -1,13 +1,14 @@
-import logo from './components/assets/logo.svg';
-import './App.css';
-import { useState } from 'react';
-// Footer
-import NavBarFooter from './components/NavBarFooter';
-// Popups
-import HelpPopup from './components/HelpPopup';
+import logo from "./components/assets/logo.svg";
+import "./App.css";
+import { useState } from "react";
 
-import ContactUsPopup from './components/ContactUsPopup';
-import AboutUsPopup from './components/AboutUsPopup';
+// Footer
+import NavBarFooter from "./components/NavBarFooter";
+// Popups
+import HelpPopup from "./components/HelpPopup";
+import ContactUsPopup from "./components/ContactUsPopup";
+import AboutUsPopup from "./components/AboutUsPopup";
+import DonatePopup from "./components/DonatePopup";
 // Css
 import './components/style/footer.css';
 import './components/style/header.css';
@@ -19,6 +20,7 @@ function App() {
   const [helpButtonPopup, setHelpButtonPopup] = useState(false);
   const [contactUsButtonPopup, setContactUsButtonPopup] = useState(false);
   const [aboutUsButtonPopup, setAboutUsButtonPopup] = useState(false);
+  const [donateButtonPopup, setDonateButtonPopup] = useState(false);
 
   return (
     <div className="App">
@@ -31,6 +33,7 @@ function App() {
           setHelpButtonPopup={setHelpButtonPopup}
           setContactUsButtonPopup={setContactUsButtonPopup}
           setAboutUsButtonPopup={setAboutUsButtonPopup}
+          setDonateButtonPopup={setDonateButtonPopup}
         />
         <AboutUsPopup
           trigger={aboutUsButtonPopup}
@@ -41,10 +44,13 @@ function App() {
           setTrigger={setContactUsButtonPopup}
         />
         <HelpPopup trigger={helpButtonPopup} setTrigger={setHelpButtonPopup} />
+        <DonatePopup
+          trigger={donateButtonPopup}
+          setTrigger={setDonateButtonPopup}
+        />
       </footer>
     </div>
   );
 }
 
 export default App;
-  
