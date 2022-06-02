@@ -12,9 +12,7 @@
 }
 
 #map {
-  cursor: grab;
-  /* background: radial-gradient(circle, rgba(136, 196, 236, 0.959) 0%, #02457cfb 100%); */
-  /* background: radial-gradient(circle, rgba(222, 255, 244, 0.959) 0%, #306462fb 100%); */
+    cursor: grab;
 }
 
 #map_access {
@@ -27,14 +25,14 @@
 }
 
 :root {
-  --global--color-logo-red: #c1121f;
-  --global--color-brick: #8e4849;
-  --global--color-light-dirt: #75635e;
-  --global--color-light-greenish: #849e96;
-  --global--color-greenish: #5b7d72;
-  /* --global--color-medium-dirt: #626D60; */
-  /* --global--color-swamp-green: #685C4E; */
-  --global--color-dirt: #4a443d;
-  --global--color-jet-black: #2c2c2c;
-  --global-color-creamy-red: #ebe2db;
+    --global--color-logo-red: #C1121F;
+    --global--color-brick: #8E4849;
+    --global--color-light-dirt: #75635E;
+    --global--color-light-greenish: #849E96;
+    --global--color-greenish: #5B7D72;
+    /* --global--color-medium-dirt: #626D60; */
+    /* --global--color-swamp-green: #685C4E; */
+    --global--color-dirt: #4A443D;
+    --global--color-jet-black: #2C2C2C;
+    --global-color-creamy-red: #ebe2db;
 }

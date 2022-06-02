@@ -7,7 +7,7 @@
     <script src="/src/components/worldmap/worldmap.js"></script>
 
     <script>
-        function zoom() {
+        function surprise() {
             const recipes = [];
             const states = simplemaps_worldmap.mapdata.state_specific
             const statesAsArray = Object.entries(states);
@@ -34,6 +34,21 @@
         }
     </script>
 
+    <!--Flera recept per kort...-->
+    <script>
+        function nextRecipe() {
+            let recipes = simplemaps_worldmap.mapdata.state_specific.SE.recipes
+            let card = document.getElementsByClassName("tt_custom_sm")[0]
+
+            if (card.innerHTML.toString() == recipes[0]) {
+                card.innerHTML = recipes[1]
+            }
+            console.log('innerHTML is recipe[0]?', card.innerHTML == recipes[0]);
+            console.log('innerHTML is recipe[1]?', card.innerHTML == recipes[1]);
+            // console.log('innerHTML is recipe[0]?', card.innerHTML == recipes[0]);
+        }
+    </script>
+  
     <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>World Wide Kitchen</title>
@@ -44,7 +59,145 @@
         <div class="flex-container">
             <img src='./src/components/assets/logo.svg' class="logo">
             <h1 class='name'>WORLD WIDE KITCHEN</h1>
-            <button class="supriseme" onclick=zoom()>Surprise me</button>
+            <button class="supriseme" onclick=surprise()>Surprise me</button>
+            <div class="autocomplete">
+                <input id="search-state" type="text" name="search-state" placeholder="Search states">
+            </div>
+
+            <script>
+                const states = Object.entries(simplemaps_worldmap.mapdata.state_specific)
+
+                function autocomplete(inp, arr) {
+                    /*the autocomplete function takes two arguments,
+                    the text field element and an array of possible autocompleted values:*/
+                    let currentFocus;
+                    /*execute a function when someone writes in the text field:*/
+                    inp.addEventListener("input", function(e) {
+                        let a, b, i, val = this.value;
+                        /*close any already open lists of autocompleted values*/
+                        closeAllLists();
+                        if (!val) {
+                            return false;
+                        }
+                        currentFocus = -1;
+                        /*create a DIV element that will contain the items (values):*/
+                        a = document.createElement("DIV");
+                        a.setAttribute("id", this.id + "autocomplete-list");
+                        a.setAttribute("class", "autocomplete-items");
+                        /*append the DIV element as a child of the autocomplete container:*/
+                        this.parentNode.appendChild(a);
+                        /*for each item in the array...*/
+                        for (i = 0; i < arr.length; i++) {
+                            /*check if the item starts with the same letters as the text field value:*/
+                            if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+                                //change width of thing --Max
+
+                                /*create a DIV element for each matching element:*/
+                                b = document.createElement("DIV");
+                                /*make the matching letters bold:*/
+                                b.innerHTML = "<strong class=matching>" + arr[i].substr(0, val.length) + "</strong>";
+                                b.innerHTML += arr[i].substr(val.length);
+                                /*insert a input field that will hold the current array item's value:*/
+                                b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+                                /*execute a function when someone clicks on the item value (DIV element):*/
+                                b.addEventListener("click", function(e) {
+                                    /*insert the value for the autocomplete text field:*/
+                                    inp.value = this.getElementsByTagName("input")[0].value;
+
+                                    for (let i = 0; i < states.length; i++) {
+                                        const state = states[i];
+                                        const stateAsArray = Object.entries(state);
+                                        console.log(stateAsArray[0][1]);
+
+                                        if (stateAsArray[1][1].name === inp.value) {
+                                            simplemaps_worldmap.state_zoom(stateAsArray[0][1]);
+
+                                            setTimeout(function() {
+                                                simplemaps_worldmap.popup("state", stateAsArray[0][1]);
+                                            }, 600);
+                                        }
+                                    }
+                                    /*close the list of autocompleted values,
+                                    (or any other open lists of autocompleted values:*/
+                                    closeAllLists();
+                                });
+                                a.appendChild(b);
+                            }
+                        }
+                    });
+                    /*execute a function presses a key on the keyboard:*/
+                    inp.addEventListener("keydown", function(e) {
+                        let x = document.getElementById(this.id + "autocomplete-list");
+                        if (x) x = x.getElementsByTagName("div");
+                        if (e.keyCode == 40) {
+                            /*If the arrow DOWN key is pressed,
+                            increase the currentFocus variable:*/
+                            currentFocus++;
+                            /*and and make the current item more visible:*/
+                            addActive(x);
+                        } else if (e.keyCode == 38) { //up
+                            /*If the arrow UP key is pressed,
+                            decrease the currentFocus variable:*/
+                            currentFocus--;
+                            /*and and make the current item more visible:*/
+                            addActive(x);
+                        } else if (e.keyCode == 13) {
+                            /*If the ENTER key is pressed, prevent the form from being submitted,*/
+                            e.preventDefault();
+                            if (currentFocus > -1) {
+                                /*and simulate a click on the "active" item:*/
+                                if (x) x[currentFocus].click();
+                            }
+                        }
+                    });
+
+                    function addActive(x) {
+                        /*a function to classify an item as "active":*/
+                        if (!x) return false;
+                        /*start by removing the "active" class on all items:*/
+                        removeActive(x);
+                        if (currentFocus >= x.length) currentFocus = 0;
+                        if (currentFocus < 0) currentFocus = (x.length - 1);
+                        /*add class "autocomplete-active":*/
+                        x[currentFocus].classList.add("autocomplete-active");
+                    }
+
+                    function removeActive(x) {
+                        /*a function to remove the "active" class from all autocomplete items:*/
+                        for (let i = 0; i < x.length; i++) {
+                            x[i].classList.remove("autocomplete-active");
+                        }
+                    }
+
+                    function closeAllLists(elmnt) {
+                        /*close all autocomplete lists in the document,
+                        except the one passed as an argument:*/
+                        let x = document.getElementsByClassName("autocomplete-items");
+                        for (let i = 0; i < x.length; i++) {
+                            if (elmnt != x[i] && elmnt != inp) {
+                                x[i].parentNode.removeChild(x[i]);
+                            }
+                        }
+                    }
+                    /*execute a function when someone clicks in the document:*/
+                    document.addEventListener("click", function(e) {
+                        closeAllLists(e.target);
+                    });
+                }
+                const array = []
+
+                console.log(states);
+                for (let i = 0; i < states.length; i++) {
+                    const state = states[i];
+                    const stateAsArray = Object.entries(state);
+                    // console.log(stateAsArray[0][1]);
+
+                    array.push(stateAsArray[1][1].name)
+                }
+
+                /*initiate the autocomplete function on the "myInput" element, and pass along the countries array as possible autocomplete values:*/
+                autocomplete(document.getElementById("search-state"), array);
+            </script>
         </div>
     </header>
     <div id="root">

@@ -9,10 +9,11 @@ import ContactUsPopup from "./components/ContactUsPopup";
 import AboutUsPopup from "./components/AboutUsPopup";
 import DonatePopup from "./components/DonatePopup";
 // Css
-import "./components/style/footer.css";
-import "./components/style/header.css";
-import "./components/style/popup.css";
-import "./components/style/recipeCard.css";
+import './components/style/footer.css';
+import './components/style/header.css';
+import './components/style/popup.css';
+import './components/style/recipeCard.css';
+import './components/style/search.css'
 
 function App() {
   const [helpButtonPopup, setHelpButtonPopup] = useState(false);
