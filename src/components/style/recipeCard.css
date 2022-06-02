@@ -15,6 +15,10 @@
     overflow: hidden;
 }
 
+.tt_sm:hover {
+    cursor: auto;
+}
+
 @keyframes appear {
     0% {
         box-shadow: rgba(0, 0, 0, 0) 0em 0em 0em 300vw;
@@ -102,9 +106,9 @@
     margin-top: 5px;
 }
 
-.btn_simplemaps {
+
+/* .btn_simplemaps {
     position: relative;
-    /* color: #e23434; */
     color: var(--global--color-logo-red);
     text-decoration: none;
     background: #ebe2db;
@@ -127,43 +131,38 @@
     -ms-user-select: none;
     user-select: none;
     border: none;
-    /*changed by Josse*/
     border-radius: 0 0 4px 4px;
-}
+} */
 
-.btn_simplemaps:hover {
+
+/* .btn_simplemaps:hover {
     text-decoration: underline;
-}
+} */
 
 .recipe-btn {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 1em;
 }
 
-.recipe-btn>button {
-    margin-bottom: 0.5em;
-    padding: 0.5em;
-    border-radius: 50%;
-    border: solid 1px var(--global--color-light-dirt);
-    color: var(--global--color-light-dirt);
-    background-color: var(--global-color-creamy-red)
-}
-
-.back-btn {
-    margin-left: 1em;
-}
-
+.back-btn,
 .next-btn {
-    margin-left: 1em;
+    margin-bottom: 0.5em;
+    margin: 0 9em;
+    color: var(--global--color-);
+    background-color: transparent;
+    font-size: 0.8em;
+    font-weight: 700;
+    line-height: 1, 6em;
+    letter-spacing: 0.02em;
+    font-family: 'Quicksand', sans-serif;
+    position: relative;
+    border: none;
 }
 
-.next-btn:hover {
-    /* transform: scale(1.1); */
-    box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
-}
-
+.next-btn:hover,
 .back-btn:hover {
-    /* transform: scale(1.1); */
-    box-shadow: 3px 3px 3px 3px rgba(31, 31, 29, 0.2);
+    text-decoration: underline;
+    cursor: pointer;
 }

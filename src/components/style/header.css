@@ -1,86 +1,154 @@
 .header {
     position: absolute;
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr 0.5fr;
+    align-items: center;
     left: 0px;
     top: 0px;
     width: 100%;
     height: 10em;
-    margin-bottom: 5em;
+    margin-bottom: 4em;
     background-color: transparent 0.5s ease-in-out;
     padding: 0;
     backdrop-filter: blur(1em);
     z-index: 1;
 }
 
+.header>* {
+    top: -1em
+}
+
+.search-area {
+    position: relative;
+    right: -4em;
+}
+
 .name {
-    /* position: relative; */
+    position: relative;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.MainName,
+.subName {
     padding: 0;
-    margin-top: 0em;
+    top: -0.5em;
+    margin: auto;
     font-family: 'Quicksand', sans-serif;
     font-size: 3em;
     color: var(--global--color-logo-red);
 }
 
-#map {
-    margin-top: 10em;
-    padding: 0;
+.subName {
+    position: relative;
+    width: 26em;
+    font-size: 1.2em;
+    text-align: center;
 }
 
 .logo {
-    /* position: absolute; */
+    position: relative;
     width: 156px;
     height: 196px;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex: 1 1 1;
-    margin: 0 10em;
+    padding: 0;
+    margin: auto;
 }
 
 
-/* .grid-item{
-    grid-row-start: 1;
-    grid-row-end: 3;
+/* picture::before {
+    position: absolute;
+    content: "";
+    width: 110%;
+    left: -5%;
+    height: 50%;
+    top: 18%;
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    transform: scale(124%);
 } */
 
 .supriseme {
-    /* font-family: "Quicksand", sans-serif;
-            font-size: 1em;
-            font-weight: bold;
-            border:none;
-            /* border-width: 0.2em; */
-    /* border-radius: 2em;
-            padding: 1em;
-            background-color: transparent;
-            margin-top: -1.4em;
-            background-color: #C1121F;
-            color: white;
-            backdrop-filter: blur(2px); */
     border: none;
     font-family: "Quicksand", sans-serif;
     background: #C1121F;
     color: #ffffff;
     font-weight: 200;
-    padding: 20px;
+    padding: 1em;
     font-size: large;
     text-transform: uppercase;
     border-radius: 6px;
     display: inline-block;
-    transition: all 0.3s ease 0s;
     z-index: 1000;
+    cursor: pointer;
 }
 
-.supriseme:hover {
-    transform: scale(1.1);
-    color: #f7f5f4;
-    font-weight: 700;
-    letter-spacing: 3px;
-    background: #e60303b2;
-    -webkit-box-shadow: 0px 5px 40px -10px rgba(230, 13, 13, 0.57);
-    -moz-box-shadow: 0px 5px 40px -10px rgba(112, 48, 48, 0.57);
-    transition: all 0.3s ease 0s;
-    cursor: pointer;
-    z-index: 1000;
+.supriseme:hover:after {
+    transform: rotate(0) scaleY(1) scaleX(1);
+    top: 1em;
+    left: 7.4em;
+    animation: ❗ .5s forwards;
+}
+
+.supriseme::after {
+    pointer-events: none;
+    position: absolute;
+    content: '!';
+    top: 1.8em;
+    left: 3.7em;
+    transform: rotate(-90deg) scaleY(9) scaleX(3);
+    animation: ❗back .2s;
+}
+
+@keyframes ❗ {
+    0% {
+        transform: rotate(-90deg) scaleY(9) scaleX(3);
+        top: 1.8em;
+        left: 3.7em;
+    }
+    28% {
+        transform: rotate(-90deg) scaleY(.2) scaleX(2);
+        top: 1.8em;
+        left: 7.4em;
+        /* transform-origin: bottom; */
+    }
+    29% {
+        transform: rotate(0) scaleY(.2) scaleX(2);
+    }
+    30% {
+        transform: rotate(0) scaleY(.2) scaleX(2);
+        top: 1.8em;
+        left: 7.4em;
+    }
+    60% {
+        transform: rotate(0) scaleY(1) scaleX(1);
+        top: 1em;
+        left: 7.4em;
+    }
+}
+
+@keyframes ❗back {
+    0% {
+        transform: rotate(0) scaleY(1) scaleX(1);
+        top: 1em;
+        left: 7.4em;
+    }
+    58% {
+        transform: rotate(0) scaleY(.2) scaleX(2);
+        top: 1.8em;
+        left: 7.4em;
+    }
+    59% {
+        transform: rotate(0) scaleY(.2) scaleX(2);
+    }
+    60% {
+        transform: rotate(-90deg) scaleY(.2) scaleX(2);
+        top: 1.8em;
+        left: 7.4em;
+        /* transform-origin: bottom; */
+    }
+    100% {
+        transform: rotate(-90deg) scaleY(9) scaleX(3);
+        top: 1.8em;
+        left: 3.7em;
+    }
 }

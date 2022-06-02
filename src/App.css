@@ -13,6 +13,8 @@
 
 #map {
     cursor: grab;
+    margin-top: 10em;
+    padding: 0;
 }
 
 #map_access {
